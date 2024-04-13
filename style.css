@@ -1,0 +1,233 @@
+/*
+Theme Name:   LiLO Theme
+Description:  LiLO Dynamico Theme
+Author:       Manuel Ziel
+Author URI:   https://liste-lebenswerte-ortenau.de/
+Template:     dynamico
+Version:      1.0.1
+Text Domain:  dynamico
+*/
+
+/*This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+LiLO is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# - CSS Variables
+# - Normalize
+# - Typography
+# - Elements
+# - Forms
+# - Accessibility
+# - Alignments
+# - Layout Structure
+# - Header
+# - Navigation
+# - Posts and pages
+# - Footer
+# - Media
+# - Blocks
+# - Media Queries
+--------------------------------------------------------------*/
+
+/* Main Style*/
+.header-main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 2.25rem;
+    padding-left: 2.00rem;
+    padding-right: 2.00rem;
+    padding-bottom: 0.0rem;
+}
+
+/* Navigation */
+@media only screen and (min-width: 960px) {
+    body.wide-theme-layout .site .primary-navigation-wrap .primary-navigation {
+        max-width: 1500px;
+		align-items: center;
+        justify-content: center;
+    }
+}
+
+/* Style adjustments for the search form */
+.search-form .search-field {
+    flex: 0 0 auto;
+    height: 30px;
+    font-size: 14px;
+    background-color: #f1f1f1;
+
+    /* border: none;  Removes the border around the search field */
+    /* padding: 5px;  Adds padding */
+    /* width: 120px;  Width for desktop */
+    /* box-sizing: border-box; padding and the frame width in width */
+}
+
+.search-form .search-submit {
+    height: 30px;
+    font-size: 1px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Tribe Events */ 
+/* Padding adjustments for Tribe Events at medium breakpoint */
+.tribe-common--breakpoint-medium.tribe-events .tribe-events-l-container {
+    padding-top: var(--tec-spacer-5); /* Changed from default 13 (96px) to 5 (24px) */
+}
+
+/* Padding adjustments for Tribe Events */
+.tribe-events .tribe-events-l-container {
+    padding-top: var(--tec-spacer-5); /* Changed from default 11 (64px) to 5 (24px) */
+}
+
+/* Style for Tribe Common buttons at medium breakpoint */
+.tribe-common--breakpoint-medium.tribe-common .tribe-common-c-btn,
+.tribe-common--breakpoint-medium.tribe-common a.tribe-common-c-btn,
+.tribe-common--breakpoint-medium.tribe-common button.tribe-common-c-btn {
+    position: relative;
+    width: auto;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='white' fill-rule='evenodd' clip-rule='evenodd' d='M11.164 10.133L16 14.97 14.969 16l-4.836-4.836a6.225 6.225 0 01-3.875 1.352 6.24 6.24 0 01-4.427-1.832A6.272 6.272 0 010 6.258 6.24 6.24 0 011.831 1.83 6.272 6.272 0 016.258 0c1.67 0 3.235.658 4.426 1.831a6.272 6.272 0 011.832 4.427c0 1.422-.48 2.773-1.352 3.875zM6.258 1.458c-1.28 0-2.49.498-3.396 1.404-1.866 1.867-1.866 4.925 0 6.791a4.774 4.774 0 003.396 1.405c1.28 0 2.489-.498 3.395-1.405 1.867-1.866 1.867-4.924 0-6.79a4.774 4.774 0 00-3.395-1.405z'%3E%3C/path%3E%3C/svg%3E"); /* SVG path of magnifying glass icon */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 18px;
+    background-origin: content-box;
+    text-indent: -9999px; /* Move text outside the visible area */
+}
+
+/* Center alignment for text */
+.tribe-common .tribe-common-b1 {
+    text-align: center;
+}
+
+.tribe-common .tribe-common-b1::after {
+    content: "";
+    display: inline-block;
+    /* nonvisible middle block */
+    height: 100%;
+    vertical-align: middle;
+}
+
+.tribe-common .tribe-common-b1 span {
+    display: inline-block;
+    /* nonvisible middle block */
+    vertical-align: middle;
+}
+
+/* Style for images in post content */
+.site-main .post-wrapper .entry-content > figure.wp-block-image.size-full.alignleft img,
+.site-main .post-wrapper .entry-content > figure.wp-block-image.size-full.alignright img,
+.site-main .entry-content > figure.wp-block-image.size-full.alignleft img,
+.site-main .entry-content > figure.wp-block-image.size-full.alignright img {
+    max-width: 350px;
+    width: 100%;
+    height: auto;
+}
+
+body.search .site .site-content .site-main .tribe_events.type-tribe_events.status-publish {
+    padding: 1.5rem;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0.1);
+    border-color: var(--dynamico--content-border-color);
+    background: #fff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 4px #ddd;
+}
+
+/* Style for Tribe Events articles within post-wrapper */
+.post-wrapper .tribe_events.type-tribe_events.status-publish {
+    padding: 1.5rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background: #fff;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 0 4px #ddd;
+}
+
+/* Hide image in Tribe Events */
+.tribe_events .post-image {
+    display: none;
+}
+
+/* Style for Organizer details in Tribe Events */
+.tribe-block__organizer__details {
+    margin: 15px 0;
+    padding: 22.5px 0; /* Standard-Padding für kleine Bildschirme */
+    border-top: 1px solid var(--tec-color-border-default);
+    font-family: var(--tec-font-family-sans-serif);
+    position: relative;
+}
+
+/* Clearfix style if needed */
+.clearfix, .tribe-clearfix {
+    zoom: 1;
+}
+
+/* Style for maintaining box size for all elements */
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+/* Style for Venue block in Tribe Events */
+.tribe-block__venue {
+    border: 1px solid var(--tec-color-border-secondary);
+    border-radius: var(--tec-border-radius-default);
+    display: flex;
+    justify-content: space-between;
+    font-family: var(--tec-font-family-sans-serif);
+    margin-top: var(--tec-spacer-6);
+    max-width: 580px;
+    padding: var(--tec-spacer-2);
+    position: relative;
+    width: 100%;
+}
+
+/* Hide the events link in type-tribe_events */
+.type-tribe_events .tribe-block.tribe-block__events-link {
+    display: none;
+}
+
+/* Responsive Style */
+@media only screen and (min-width: 480px) {}
+
+/* Adjustments for larger screens (at least 768px width) */
+@media screen and (min-width: 880px) {
+    .tribe-block__venue {
+        flex-direction: row;
+        padding: var(--tec-spacer-5);
+    }
+    
+    .tribe-block__organizer__details {
+        padding: 32px 0; /* Increased padding for larger screens */
+    }
+}
+
+@media (max-width: 880px) {
+    /* Adjustments for images in post content on smaller screens */
+    .site-main .post-wrapper .entry-content > figure.wp-block-image.size-full.alignleft img,
+    .site-main .post-wrapper .entry-content > figure.wp-block-image.size-full.alignright img,
+    .site-main .entry-content > figure.wp-block-image.size-full.alignleft img,
+    .site-main .entry-content > figure.wp-block-image.size-full.alignright img {
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    .site-main .post-wrapper .entry-content > figure.wp-block-image.size-full.alignleft,
+    .site-main .post-wrapper .entry-content > figure.wp-block-image.size-full.alignright,
+    .site-main .entry-content > figure.wp-block-image.size-full.alignleft,
+    .site-main .entry-content > figure.wp-block-image.size-full.alignright {
+        margin-right: 0rem;
+        margin-left: 0rem;
+    }
+}
