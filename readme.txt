@@ -21,15 +21,21 @@ Current base funtions:
 - Remove Categories on Home Feed. To remove set the current ID's in the functions.php code.
 - Extra Styles
 
+Roadmap:
+- Add search form in the menu  
+- Add function add_anchor_to_headings to set all headings as anchor
+
 == Installation ==
 
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
-2. Click on the 'Upload Theme' button to upload the ZIP-file of the theme.
+2. Click on the 'Upload Theme' button to upload the Zip-File of the theme.
 
 == Changelog ==
 
+= 1.1.0 - 2024-00-00 =
+
 = 1.0.1 - 2024-04-13 =
-- Add CSS Styles and remove old Styles from Custromizer
+- Add CSS-Styles and remove old Styles from Custromizer
 
 = 1.0.0 - 2024-03-11 =
 - Add exclude specific categories from home feed
