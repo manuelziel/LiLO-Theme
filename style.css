@@ -4,7 +4,7 @@ Description:  LiLO Dynamico Theme
 Author:       Manuel Ziel
 Author URI:   https://liste-lebenswerte-ortenau.de/
 Template:     dynamico
-Version:      1.0.1
+Version:      1.1.0
 Text Domain:  dynamico
 */
 
@@ -237,3 +237,14 @@ body.search .site .site-content .site-main .tribe_events.type-tribe_events.statu
 /*--------------------------------------------------------------
 # - PayPal Style
 --------------------------------------------------------------*/
+.paypal-svg-button .wp-block-button__link {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    border: none; 
+    text-decoration: none; 
+    cursor: pointer; 
+    width: 150px;
+    /* height: 60px; */
+    cursor: pointer;
+}

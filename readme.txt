@@ -37,10 +37,16 @@ Roadmap:
 == Changelog ==
 
 = 1.1.0 - 2024-00-00 =
--Add PayPal button style
+- Add PayPal button style
 
 = 1.0.1 - 2024-04-13 =
 - Add css-styles and remove old styles from custromizer
 
 = 1.0.0 - 2024-03-11 =
 - Add exclude specific categories from home feed
+
+
+== Examples ==
+
+Button Paypal:
+Use [paypal_donate_button] as shortcode.

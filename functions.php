@@ -19,4 +19,13 @@ function exclude_specific_categories_home($query) {
         $query->set('cat', '-301,-508');
     }
 }
-add_action('pre_get_posts', 'exclude_specific_categories_home');?>
+add_action('pre_get_posts', 'exclude_specific_categories_home');
+
+/**
+* add PayPal donate button
+*/
+function paypal_svg_button_shortcode() {
+    $svg_content = file_get_contents(get_stylesheet_directory() . '/assets/icons/PayPal.svg');
+    return '<div class="wp-block-button has-custom-width wp-block-button__width-150 paypal-svg-button"><a class="wp-block-button__link wp-element-button">' . $svg_content . '</a></div>';
+}
+add_shortcode('paypal_donate_button', 'paypal_svg_button_shortcode');
