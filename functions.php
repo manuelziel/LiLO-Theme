@@ -24,8 +24,14 @@ add_action('pre_get_posts', 'exclude_specific_categories_home');
 /**
 * add PayPal donate button
 */
-function paypal_svg_button_shortcode() {
-    $svg_content = file_get_contents(get_stylesheet_directory() . '/assets/icons/PayPal.svg');
-    return '<div class="wp-block-button has-custom-width wp-block-button__width-150 paypal-svg-button"><a class="wp-block-button__link wp-element-button">' . $svg_content . '</a></div>';
+function paypal_donate_button_shortcode() {
+    $svg_path = get_stylesheet_directory() . '/assets/icons/PayPal.svg';
+    $svg_content = file_get_contents($svg_path);
+    $paypal_url = "https://www.paypal.com/donate?hosted_button_id=YGGWY5UGLTBBS";
+
+    return '<div class="wp-block-button has-custom-width wp-block-button__width-150 paypal-donate-button">' .
+           '<a href="' . $paypal_url . '" target="_blank" class="wp-block-button__link wp-element-button">' .
+           $svg_content .
+           '</a></div>';
 }
-add_shortcode('paypal_donate_button', 'paypal_svg_button_shortcode');
+add_shortcode('paypal_donate_button', 'paypal_donate_button_shortcode');

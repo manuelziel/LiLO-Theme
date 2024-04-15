@@ -237,14 +237,17 @@ body.search .site .site-content .site-main .tribe_events.type-tribe_events.statu
 /*--------------------------------------------------------------
 # - PayPal Style
 --------------------------------------------------------------*/
-.paypal-svg-button .wp-block-button__link {
+.paypal-donate-button .wp-block-button__link {
     display: flex;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
-    border: none; 
-    text-decoration: none; 
-    cursor: pointer; 
+    border: none;
     width: 150px;
-    /* height: 60px; */
+    text-decoration: none;
     cursor: pointer;
+}
+
+.paypal-donate-button {
+    width: 150px; 
+    margin: 0 auto; 
 }
