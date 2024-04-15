@@ -18,8 +18,12 @@ Customized styles and functions by Manuel Ziel.
 This Theme is a Child-Theme of Dynamico. 
 
 Current base funtions:
-- Remove Categories on Home Feed. To remove set the current ID's in the functions.php code.
-- Extra Styles
+- Remove categories on home feed. To remove set the current ID's in the functions.php code.
+- Extra Styles: 
+    - theme 
+    - PayPal button style
+    - responsive style
+    - plugins (Tribe Events)
 
 Roadmap:
 - Add search form in the menu  
@@ -33,9 +37,10 @@ Roadmap:
 == Changelog ==
 
 = 1.1.0 - 2024-00-00 =
+-Add PayPal button style
 
 = 1.0.1 - 2024-04-13 =
-- Add CSS-Styles and remove old Styles from Custromizer
+- Add css-styles and remove old styles from custromizer
 
 = 1.0.0 - 2024-03-11 =
 - Add exclude specific categories from home feed
