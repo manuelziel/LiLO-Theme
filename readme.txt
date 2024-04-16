@@ -36,8 +36,9 @@ Roadmap:
 
 == Changelog ==
 
-= 1.1.0 - 2024-00-00 =
+= 1.1.0 - 2024-04-15 =
 - Add PayPal button style
+- Fix styles header main
 
 = 1.0.1 - 2024-04-13 =
 - Add css-styles and remove old styles from custromizer
