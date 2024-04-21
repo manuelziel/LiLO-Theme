@@ -15,7 +15,8 @@ Use it to make something cool, have fun, and share what you've learned with othe
 Customized styles and functions by Manuel Ziel.
 
 == Description ==
-This Theme is a Child-Theme of Dynamico. 
+This Theme is a Child-Theme of Dynamico. Used for LiLO (Liste Lebenswerte Ortenau) 
+and LHL (Liste Haslach Lebenswert).
 
 Current base funtions:
 - Remove categories on home feed. To remove set the current ID's in the functions.php code.
@@ -36,6 +37,10 @@ Roadmap:
 
 == Changelog ==
 
+= 1.1.1 - 2024-04-?? =
+- Change PayPal button shortcode from [paypal_donate_button] to [lilo_paypal_donate_button]
+- Add PayPal button for LHL
+
 = 1.1.0 - 2024-04-15 =
 - Add PayPal button style
 - Fix styles header main
@@ -50,4 +55,5 @@ Roadmap:
 == Examples ==
 
 Button Paypal:
-Use [paypal_donate_button] as shortcode.
+Use [lilo_paypal_donate_button] as shortcode for LiLO.
+Use [lhl_paypal_donate_button] as shortcode for LHL.

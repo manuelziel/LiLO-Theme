@@ -22,9 +22,9 @@ function exclude_specific_categories_home($query) {
 add_action('pre_get_posts', 'exclude_specific_categories_home');
 
 /**
-* add PayPal donate button
+* add LiLO (Liste Lebenswerte Ortenau) PayPal donate button
 */
-function paypal_donate_button_shortcode() {
+function lilo_paypal_donate_button_shortcode() {
     $svg_path = get_stylesheet_directory() . '/assets/icons/PayPal.svg';
     $svg_content = file_get_contents($svg_path);
     $paypal_url = "https://www.paypal.com/donate?hosted_button_id=YGGWY5UGLTBBS";
@@ -34,4 +34,19 @@ function paypal_donate_button_shortcode() {
            $svg_content .
            '</a></div>';
 }
-add_shortcode('paypal_donate_button', 'paypal_donate_button_shortcode');
+add_shortcode('lilo_paypal_donate_button', 'lilo_paypal_donate_button_shortcode');
+
+/**
+* add LHL (Liste Haslach Lebenswert) PayPal donate button
+*/
+function lhl_paypal_donate_button_shortcode() {
+    $svg_path = get_stylesheet_directory() . '/assets/icons/PayPal.svg';
+    $svg_content = file_get_contents($svg_path);
+    $paypal_url = "https://www.paypal.com/donate?hosted_button_id=NR8Z5BV6L7U6C";
+
+    return '<div class="wp-block-button has-custom-width wp-block-button__width-150 paypal-donate-button">' .
+           '<a href="' . $paypal_url . '" target="_blank" class="wp-block-button__link wp-element-button">' .
+           $svg_content .
+           '</a></div>';
+}
+add_shortcode('lhl_paypal_donate_button', 'lhl_paypal_donate_button_shortcode');
