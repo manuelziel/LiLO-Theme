@@ -2,7 +2,7 @@
 /**
  * LiLO child theme of Dynamico Theme
  * 
- * @version 1.2.0
+ * @version 1.2.1
  * @package LiLO
  */
 function child_theme_styles() {
