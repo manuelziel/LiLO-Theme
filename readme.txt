@@ -3,8 +3,8 @@ Author URI: https://liste-lebenswerte-ortenau.de
 Theme URI: https://liste-lebenswerte-ortenau.de
 Contributors: LiLO
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, block-patterns, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
-Requires at least: 5.2
-Tested up to: 6.5
+Requires at least: 6
+Tested up to: 6.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Child Theme: Dynamico 1.1.4
@@ -24,7 +24,7 @@ Current base funtions:
 - Primary Navigation has now max-width: 1500px;
 - Extra Styles: 
     - theme 
-    - primary navigation search form
+    - primary navigation fixes and search form
     - PayPal button style
     - responsive style
     - plugins (Tribe Events)
@@ -49,6 +49,10 @@ Use [lhl_paypal_donate_button] as shortcode for LHL.
 
 == Changelog ==
 Semantic Versioning -> https://semver.org/
+
+= 1.2.2 - 2024-04-29 =
+- FIX style header image top to navigation from 1px to 0px
+- FIX style full Navigation hover hight
 
 = 1.2.1 - 2024-04-28 =
 - FIX search form

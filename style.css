@@ -4,7 +4,7 @@ Description:  LiLO Child Theme from Dynamico Theme
 Author:       Manuel Ziel
 Author URI:   https://liste-lebenswerte-ortenau.de/
 Template:     dynamico
-Version:      1.2.1
+Version:      1.2.2
 Text Domain:  dynamico
 */
 
@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # - Main Style
 # - Navigation
+# - Header Image
 # - Search Form Styles
 # - Tribe Events
 # - Post
@@ -83,12 +84,21 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 # - Navigation
 --------------------------------------------------------------*/
+/* Set the Navigation width to 1500px */
 @media only screen and (min-width: 960px) {
     body.wide-theme-layout .site .primary-navigation-wrap .primary-navigation {
         max-width: 1500px;
 		align-items: center;
         justify-content: center;
     }
+}
+
+/* Full hover effect high */
+.main-navigation ul li a {
+    display: block;  
+    padding: 1.15rem 1.5rem;  
+    margin: 0;  
+    height: 100%; 
 }
 
 /*--------------------------------------------------------------
@@ -126,6 +136,13 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/*--------------------------------------------------------------
+# Header Image
+--------------------------------------------------------------*/
+.header-image {
+    margin-top: 0px;
 }
 
 /*--------------------------------------------------------------
