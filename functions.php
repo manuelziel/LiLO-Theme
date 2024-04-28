@@ -1,7 +1,10 @@
 <?php
 /**
-* child theme styles
-*/
+ * LiLO child theme of Dynamico Theme
+ * 
+ * @version 1.2.0
+ * @package LiLO
+ */
 function child_theme_styles() {
 wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 wp_enqueue_style( 'child-theme-css', get_stylesheet_directory_uri() .'/style.css' , array('parent-style'));
@@ -10,8 +13,8 @@ wp_enqueue_style( 'child-theme-css', get_stylesheet_directory_uri() .'/style.css
 add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
 
 /**
-* remove categories on home feed
-*/
+ * remove categories on home feed
+ */
 function exclude_specific_categories_home($query) {
     if ($query->is_home() && $query->is_main_query()) {
         // set IDs of the categories to remove
@@ -22,8 +25,44 @@ function exclude_specific_categories_home($query) {
 add_action('pre_get_posts', 'exclude_specific_categories_home');
 
 /**
-* add LiLO (Liste Lebenswerte Ortenau) PayPal donate button
-*/
+ * string for anchor without unwanted characters, but allows umlauts and ß 
+ */
+function dt_custom_anchor_slug($title) {
+    $slug = remove_accents($title);
+    $slug = preg_replace('/[^a-zA-Z0-9-_ÄäÖöÜüß ]/', '', $slug); // Removes unwanted characters, but allows umlauts and ß
+    $slug = str_replace(' ', '-', $slug);
+    $slug = strtolower($slug);
+    return $slug;
+}
+
+/**
+ * add anker to any headline
+ */
+function dt_anchor_content_h1_h6 ($content) {
+    $pattern = "~<h(1|2|3|4|5|6)[^>]*>(.*?)</h(1|2|3|4|5|6)>~";
+    $content = preg_replace_callback($pattern, function ($matches) {
+    $tag = $matches[1]; // Tag level (h1, h2, etc.)
+    $string = $matches[0]; // Complete string (<h3 class="wp-block-heading" id="jana-schwab">Jana Schwab</h3>)
+    $title = $matches[2]; // Title (Jana Schwab)
+    $slug = dt_custom_anchor_slug($title);
+		
+		if (strpos($string, 'class=') !== false) {
+			$string = preg_replace('/(class=")/i', "id=\"$slug\" $1", $string);
+		} 
+        //else {
+		//$string .= " id=\"$slug\"";
+		//}
+
+    return "{$string}";
+}, $content);
+
+return $content;
+}
+add_filter('the_content', 'dt_anchor_content_h1_h6');
+
+/**
+ * add LiLO (Liste Lebenswerte Ortenau) PayPal donate button
+ */
 function lilo_paypal_donate_button_shortcode() {
     $svg_path = get_stylesheet_directory() . '/assets/icons/PayPal.svg';
     $svg_content = file_get_contents($svg_path);
@@ -37,8 +76,8 @@ function lilo_paypal_donate_button_shortcode() {
 add_shortcode('lilo_paypal_donate_button', 'lilo_paypal_donate_button_shortcode');
 
 /**
-* add LHL (Liste Haslach Lebenswert) PayPal donate button
-*/
+ * add LHL (Liste Haslach Lebenswert) PayPal donate button
+ */
 function lhl_paypal_donate_button_shortcode() {
     $svg_path = get_stylesheet_directory() . '/assets/icons/PayPal.svg';
     $svg_content = file_get_contents($svg_path);

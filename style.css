@@ -1,10 +1,10 @@
 /*
 Theme Name:   LiLO Theme
-Description:  LiLO Dynamico Theme
+Description:  LiLO Child Theme from Dynamico Theme
 Author:       Manuel Ziel
 Author URI:   https://liste-lebenswerte-ortenau.de/
 Template:     dynamico
-Version:      1.1.0
+Version:      1.2.0
 Text Domain:  dynamico
 */
 
@@ -27,6 +27,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - Post
 # - Responsive Style
 # - PayPal Style
+# - Footer
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -286,4 +287,21 @@ body.search .site .site-content .site-main .tribe_events.type-tribe_events.statu
 .paypal-donate-button {
     width: 150px; 
     margin: 0 auto; 
+}
+
+/*--------------------------------------------------------------
+# - Footer
+--------------------------------------------------------------*/
+
+.footer-copyright-flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-copyright-left {
+    text-align: left;
+}
+
+.footer-copyright-right {
+    text-align: right;
 }
