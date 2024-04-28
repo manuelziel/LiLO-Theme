@@ -52,7 +52,7 @@ Semantic Versioning -> https://semver.org/
 
 = 1.2.2 - 2024-04-29 =
 - FIX style header image top to navigation from 1px to 0px
-- FIX style full Navigation hover hight
+- FIX style full navigation hover hight
 
 = 1.2.1 - 2024-04-28 =
 - FIX search form
