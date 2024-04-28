@@ -23,6 +23,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 ----------------------------------------------------------------
 # - Main Style
 # - Navigation
+# - Search Form Styles
 # - Tribe Events
 # - Post
 # - Responsive Style
@@ -90,19 +91,34 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
     }
 }
 
-/* style adjustments for the search form */
+/*--------------------------------------------------------------
+# Search Form Styles
+--------------------------------------------------------------*/
+.primary-navigation-wrap .menu-item.search-menu-item {
+    flex: 1;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    transition: all 0.15s ease;
+    padding: 1.15rem 1.5rem;
+}
+
+
+/* Hover effects */
+.search-menu-item:hover {
+    background-color: var(--dynamico--navi-hover-color);
+    color: var(--dynamico--navi-hover-text-color);
+}
+
+/* Search input field styles */
 .search-form .search-field {
     flex: 0 0 auto;
     height: 30px;
     font-size: 14px;
     background-color: #f1f1f1;
-
-    /* border: none;  Removes the border around the search field */
-    /* padding: 5px;  Adds padding */
-    /* width: 120px;  Width for desktop */
-    /* box-sizing: border-box; padding and the frame width in width */
 }
 
+/* Submit button styles */
 .search-form .search-submit {
     height: 30px;
     font-size: 1px;

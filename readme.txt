@@ -20,15 +20,17 @@ and LHL (Liste Haslach Lebenswert).
 
 Current base funtions:
 - Remove categories on home feed. To remove set the current ID's in the functions.php code.
+- Search form at primary navigation
+- Primary Navigation has now max-width: 1500px;
 - Extra Styles: 
     - theme 
+    - primary navigation search form
     - PayPal button style
     - responsive style
     - plugins (Tribe Events)
 
 Roadmap:
-- Add search form in the menu  
-- Add function add_anchor_to_headings to set all headings as anchor
+- nothing
 
 == Installation ==
 
@@ -48,6 +50,10 @@ Use [lhl_paypal_donate_button] as shortcode for LHL.
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 1.2.1 - 2024-04-28 =
+- FIX search form
+- Fix search form styles
+
 = 1.2.0 - 2024-04-26 =
 - Add PayPal button shortcode
 - Add PayPal button for LHL
@@ -56,7 +62,7 @@ Semantic Versioning -> https://semver.org/
 
 = 1.1.0 - 2024-04-15 =
 - Add PayPal button style
-- Fix styles header main
+- FIX styles header main
 
 = 1.0.1 - 2024-04-13 =
 - FIX css-styles and remove old styles from custromizer
