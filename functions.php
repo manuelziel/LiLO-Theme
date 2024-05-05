@@ -2,7 +2,7 @@
 /**
  * LiLO child theme of Dynamico Theme
  * 
- * @version 1.2.1
+ * @version 1.3.0
  * @package LiLO
  */
 function child_theme_styles() {
@@ -16,7 +16,7 @@ add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
  * add search form to main navigation
  */
 function add_search_form_to_menu($items, $args) {
-    if ($args->theme_location == 'primary') { // Ersetzen Sie 'primary' durch die tatsächliche Menüposition, die Sie verwenden
+    if ($args->theme_location == 'primary') {
         $search_form = '<li class="menu-item search-menu-item">' .
                        '<form role="search" method="get" class="search-form" action="' . esc_url(home_url('/')) . '">' .
                        '<label>' .

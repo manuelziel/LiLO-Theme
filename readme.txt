@@ -25,7 +25,7 @@ Current base funtions:
 - Extra Styles: 
     - theme 
     - primary navigation fixes and search form
-    - PayPal button style
+    - button style
     - responsive style
     - plugins (Tribe Events)
 
@@ -50,13 +50,17 @@ Use [lhl_paypal_donate_button] as shortcode for LHL.
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 1.3.0 - 2024-04-29 =
+- Add button hover style, menu-item, link, header, categories, more-link
+- FIX PayPal button height
+
 = 1.2.2 - 2024-04-29 =
 - FIX style header image top to navigation from 1px to 0px
 - FIX style full navigation hover hight
 
 = 1.2.1 - 2024-04-28 =
 - FIX search form
-- Fix search form styles
+- FIX search form styles
 
 = 1.2.0 - 2024-04-26 =
 - Add PayPal button shortcode
