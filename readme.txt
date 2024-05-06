@@ -72,7 +72,7 @@ Semantic Versioning -> https://semver.org/
 - Add PayPal button shortcode
 - Add PayPal button for LHL
 - Add custom footer copyright
-- Add anker to any headline
+- Add anchor to any headline
 
 = 1.1.0 - 2024-04-15 =
 - Add PayPal button style
