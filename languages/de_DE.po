@@ -1,0 +1,567 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: LiLO\n"
+"Report-Msgid-Bugs-To: https://liste-lebenswerte-ortenau.de/\n"
+"POT-Creation-Date: 2021-05-18 14:34+0200\n"
+"PO-Revision-Date: 2024-05-05 18:00+0100\n"
+"Last-Translator: Ihr Name <Ihre E-Mail>\n"
+"Language-Team: de_DE <info@liste-lebenswerte-ortenau.de>\n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: 404.php:17
+msgid "404: Page not found"
+msgstr "404: Seite nicht gefunden"
+
+#: 404.php:22
+msgid ""
+"It looks like nothing was found at this location. Maybe try a search or one "
+"of the links below?"
+msgstr "An dieser Stelle wurde nichts gefunden. Versuchen Sie eine Suche oder einen der untenstehenden Links."
+
+#: comments.php:33
+msgid "One comment"
+msgstr "Ein Kommentar"
+
+#: comments.php:36
+#, php-format
+msgid "%s comments"
+msgstr "%s Kommentare"
+
+#: comments.php:58
+msgid "Comments are closed."
+msgstr "Kommentare sind geschlossen."
+
+#: functions.php:51
+msgid "Main Navigation"
+msgstr "Hauptnavigation"
+
+#: functions.php:52
+msgid "Social Icons (Header)"
+msgstr "Soziale Symbole (Kopfbereich)"
+
+#: functions.php:123 inc/addons.php:138 inc/addons.php:139
+msgid "Expand child menu"
+msgstr "Untermenü erweitern"
+
+#: functions.php:124 inc/addons.php:138 inc/addons.php:139
+msgid "Collapse child menu"
+msgstr "Untermenü reduzieren"
+
+#: functions.php:187
+msgid "Sidebar"
+msgstr "Seitenleiste"
+
+#: functions.php:189
+msgctxt "widget area description"
+msgid "Appears on blog pages and single posts."
+msgstr "Erscheint auf Blog-Seiten und einzelnen Beiträgen."
+
+#: functions.php:198
+msgid "Header"
+msgstr "Kopfbereich"
+
+#: functions.php:200
+msgid "Appears on header area. You can add a search or an ad widget here."
+msgstr "Erscheint im Kopfbereich. Hier können Sie eine Suchfunktion oder ein Anzeigewidget hinzufügen."
+
+#: functions.php:209
+msgid "Footer Copyright"
+msgstr "Fußzeilen-Copyright"
+
+#: functions.php:211
+msgctxt "widget area description"
+msgid "Appears in the bottom footer line."
+msgstr "Erscheint in der unteren Fußzeile."
+
+#: functions.php:226
+msgid "Post Thumbnail"
+msgstr "Beitragsbild"
+
+#: functions.php:227
+msgid "lilo Ultra Wide (3:1)"
+msgstr "LiLO Ultra Wide (3:1)"
+
+#: functions.php:228
+msgid "lilo Landscape (16:9)"
+msgstr "LiLO Landscape (16:9)"
+
+#: functions.php:229
+msgid "lilo Classic (4:3)"
+msgstr "LiLO Classic (4:3)"
+
+#: functions.php:230
+msgid "lilo Square (1:1)"
+msgstr "LiLO Square (1:1)"
+
+#: functions.php:231
+msgid "lilo Portrait (3:4)"
+msgstr "LiLO Portrait (3:4)"
+
+#: header.php:28
+msgid "Skip to content"
+msgstr "Zum Inhalt springen"
+
+#: inc/customizer/controls/category-dropdown-control.php:31
+msgid "All Categories"
+msgstr "Alle Kategorien"
+
+#: inc/customizer/customizer.php:44
+msgid "Background"
+msgstr "Hintergrund"
+
+#: inc/customizer/default-options.php:63
+msgid "Read more"
+msgstr "Mehr lesen"
+
+#: inc/customizer/sections/blog-settings.php:19
+msgid "Blog Settings"
+msgstr "Blog-Einstellungen"
+
+#: inc/customizer/sections/blog-settings.php:36
+msgid "Blog Layout"
+msgstr "Blog-Layout"
+
+#: inc/customizer/sections/blog-settings.php:42
+msgid "Horizontal List"
+msgstr "Horizontale Liste"
+
+#: inc/customizer/sections/blog-settings.php:43
+msgid "Horizontal List (alternative)"
+msgstr "Horizontale Liste (alternativ)"
+
+#: inc/customizer/sections/blog-settings.php:44
+msgid "Vertical List"
+msgstr "Vertikale Liste"
+
+#: inc/customizer/sections/blog-settings.php:45
+msgid "Vertical List (alternative)"
+msgstr "Vertikale Liste (alternativ)"
+
+#: inc/customizer/sections/blog-settings.php:46
+msgid "Two Column Grid"
+msgstr "Zwei-Spalten-Gitter"
+
+#: inc/customizer/sections/blog-settings.php:47
+msgid "Three Column Grid"
+msgstr "Drei-Spalten-Gitter"
+
+#: inc/customizer/sections/blog-settings.php:60
+msgid "Blog Image"
+msgstr "Blog-Bild"
+
+#: inc/customizer/sections/blog-settings.php:66
+#: inc/customizer/sections/post-settings.php:195
+msgid "Ultra Wide (3:1)"
+msgstr "Ultra-Breit (3:1)"
+
+#: inc/customizer/sections/blog-settings.php:67
+#: inc/customizer/sections/post-settings.php:196
+msgid "Landscape (16:9)"
+msgstr "Landschaft (16:9)"
+
+#: inc/customizer/sections/blog-settings.php:68
+#: inc/customizer/sections/post-settings.php:197
+msgid "Classic (4:3)"
+msgstr "Klassisch (4:3)"
+
+#: inc/customizer/sections/blog-settings.php:69
+msgid "Square (1:1)"
+msgstr "Quadratisch (1:1)"
+
+#: inc/customizer/sections/blog-settings.php:70
+msgid "Portrait (3:4)"
+msgstr "Porträt (3:4)"
+
+#: inc/customizer/sections/blog-settings.php:71
+#: inc/customizer/sections/post-settings.php:198
+msgid "Flexible Height"
+msgstr "Flexible Höhe"
+
+#: inc/customizer/sections/blog-settings.php:72
+#: inc/customizer/sections/post-settings.php:176
+msgid "Hide Image"
+msgstr "Bild ausblenden"
+
+#: inc/customizer/sections/blog-settings.php:85
+msgid "Blog Content"
+msgstr "Blog-Inhalt"
+
+#: inc/customizer/sections/blog-settings.php:91
+msgid "Full post"
+msgstr "Vollständiger Beitrag"
+
+#: inc/customizer/sections/blog-settings.php:92
+msgid "Post excerpt"
+msgstr "Beitrag-Auszug"
+
+#: inc/customizer/sections/blog-settings.php:105
+msgid "Excerpt Length"
+msgstr "Auszugslänge"
+
+#: inc/customizer/sections/blog-settings.php:121
+msgid "Excerpt More Text"
+msgstr "Mehr-Text für Auszug"
+
+#: inc/customizer/sections/blog-settings.php:155
+msgid "Read More Link"
+msgstr "Mehr-Link"
+
+#: inc/customizer/sections/blog-settings.php:171
+msgid "Number of Posts"
+msgstr "Anzahl der Beiträge"
+
+#: inc/customizer/sections/featured-posts-settings.php:19
+msgid "Featured Posts"
+msgstr "Empfohlene Beiträge"
+
+#: inc/customizer/sections/featured-posts-settings.php:30
+msgid "Display Featured Posts"
+msgstr "Empfohlene Beiträge anzeigen"
+
+#: inc/customizer/sections/featured-posts-settings.php:45
+msgid "Show Featured Posts on blog page"
+msgstr "Empfohlene Beiträge auf der Blog-Seite anzeigen"
+
+#: inc/customizer/sections/featured-posts-settings.php:62
+msgid "Featured Posts Category"
+msgstr "Kategorie für empfohlene Beiträge"
+
+#: inc/customizer/sections/featured-posts-settings.php:78
+msgid "Featured Posts Layout"
+msgstr "Layout für empfohlene Beiträge"
+
+#: inc/customizer/sections/featured-posts-settings.php:84
+msgid "One Post"
+msgstr "Ein Beitrag"
+
+#: inc/customizer/sections/featured-posts-settings.php:85
+msgid "Four Posts"
+msgstr "Vier Beiträge"
+
+#: inc/customizer/sections/footer-settings.php:19
+msgid "Footer Settings"
+msgstr "Fußzeilen-Einstellungen"
+
+#: inc/customizer/sections/footer-settings.php:36
+msgid "Footer Text"
+msgstr "Fußzeilen-Text"
+
+#: inc/customizer/sections/footer-settings.php:59
+msgid "Display credit link on footer line"
+msgstr "Credit-Link in der Fußzeile anzeigen"
+
+#: inc/customizer/sections/layout-settings.php:19
+msgid "Layout Settings"
+msgstr "Layout-Einstellungen"
+
+#: inc/customizer/sections/layout-settings.php:36
+msgid "Theme Layout"
+msgstr "Theme-Layout"
+
+#: inc/customizer/sections/layout-settings.php:42
+msgid "Centered Layout"
+msgstr "Zentriertes Layout"
+
+#: inc/customizer/sections/layout-settings.php:43
+msgid "Wide Layout"
+msgstr "Breites Layout"
+
+#: inc/customizer/sections/layout-settings.php:56
+msgid "Sidebar Position"
+msgstr "Seitenleiste-Position"
+
+#: inc/customizer/sections/layout-settings.php:62
+msgid "Left Sidebar"
+msgstr "Linke Seitenleiste"
+
+#: inc/customizer/sections/layout-settings.php:63
+msgid "Right Sidebar"
+msgstr "Rechte Seitenleiste"
+
+#: inc/customizer/sections/layout-settings.php:70
+msgid "Box Shadows"
+msgstr "Schatteneffekte"
+
+#: inc/customizer/sections/layout-settings.php:86
+msgid "Display shadows on content boxes"
+msgstr "Schatten auf Inhaltsboxen anzeigen"
+
+#: inc/customizer/sections/post-settings.php:19
+msgid "Post Settings"
+msgstr "Beitrag-Einstellungen"
+
+#: inc/customizer/sections/post-settings.php:30
+msgid "Post Details on blog and archives"
+msgstr "Beitragsdetails in Blog und Archiv"
+
+#: inc/customizer/sections/post-settings.php:46
+#: inc/customizer/sections/post-settings.php:120
+msgid "Display date"
+msgstr "Datum anzeigen"
+
+#: inc/customizer/sections/post-settings.php:62
+#: inc/customizer/sections/post-settings.php:136
+msgid "Display author"
+msgstr "Autor anzeigen"
+
+#: inc/customizer/sections/post-settings.php:78
+#: inc/customizer/sections/post-settings.php:152
+msgid "Display comments"
+msgstr "Kommentare anzeigen"
+
+#: inc/customizer/sections/post-settings.php:94
+#: inc/customizer/sections/post-settings.php:248
+msgid "Display categories"
+msgstr "Kategorien anzeigen"
+
+#: inc/customizer/sections/post-settings.php:104
+msgid "Post Details on single posts"
+msgstr "Beitragsdetails in einzelnen Beiträgen"
+
+#: inc/customizer/sections/post-settings.php:168
+msgid "Single Post Layout"
+msgstr "Layout für Einzelbeiträge"
+
+#: inc/customizer/sections/post-settings.php:174
+msgid "Featured image above title"
+msgstr "Beitragsbild über dem Titel"
+
+#: inc/customizer/sections/post-settings.php:175
+msgid "Featured image below title"
+msgstr "Beitragsbild unter dem Titel"
+
+#: inc/customizer/sections/post-settings.php:189
+msgid "Single Post Image"
+msgstr "Einzelbeitrags-Bild"
+
+#: inc/customizer/sections/post-settings.php:216
+msgid "Single Post Footer"
+msgstr "Einzelbeitrags-Fußzeile"
+
+#: inc/customizer/sections/post-settings.php:232
+msgid "Display tags"
+msgstr "Tags anzeigen"
+
+#: inc/customizer/sections/post-settings.php:264
+msgid "Display previous/next post navigation"
+msgstr "Vorheriger/Nächster Beitrag-Navigation anzeigen"
+
+#: inc/customizer/sections/website-settings.php:34
+msgid "Retina Logo"
+msgstr "Retina-Logo"
+
+#: inc/customizer/sections/website-settings.php:50
+msgid "Scale down logo image for retina displays"
+msgstr "Logo-Bild für Retina-Displays verkleinern"
+
+#: inc/customizer/sections/website-settings.php:66
+msgid "Display Site Title"
+msgstr "Website-Titel anzeigen"
+
+#: inc/customizer/sections/website-settings.php:82
+msgid "Display Tagline"
+msgstr "Slogan anzeigen"
+
+#: inc/gutenberg.php:35
+msgctxt "block color"
+msgid "Primary"
+msgstr "Primär"
+
+#: inc/gutenberg.php:40
+msgctxt "block color"
+msgid "Secondary"
+msgstr "Sekundär"
+
+#: inc/gutenberg.php:45
+msgctxt "block color"
+msgid "Tertiary"
+msgstr "Tertiär"
+
+#: inc/gutenberg.php:50
+msgctxt "block color"
+msgid "Contrast"
+msgstr "Kontrast"
+
+#: inc/gutenberg.php:55
+msgctxt "block color"
+msgid "Accent"
+msgstr "Akzent"
+
+#: inc/gutenberg.php:60
+msgctxt "block color"
+msgid "Highlight"
+msgstr "Hervorhebung"
+
+#: inc/gutenberg.php:65
+msgctxt "block color"
+msgid "White"
+msgstr "Weiß"
+
+#: inc/gutenberg.php:70
+msgctxt "block color"
+msgid "Light Gray"
+msgstr "Hellgrau"
+
+#: inc/gutenberg.php:75
+msgctxt "block color"
+msgid "Gray"
+msgstr "Grau"
+
+#: inc/gutenberg.php:80
+msgctxt "block color"
+msgid "Dark Gray"
+msgstr "Dunkelgrau"
+
+#: inc/gutenberg.php:85
+msgctxt "block color"
+msgid "Black"
+msgstr "Schwarz"
+
+#: inc/gutenberg.php:94
+msgctxt "block font size"
+msgid "Small"
+msgstr "Klein"
+
+#: inc/gutenberg.php:99
+msgctxt "block font size"
+msgid "Medium"
+msgstr "Mittel"
+
+#: inc/gutenberg.php:104
+msgctxt "block font size"
+msgid "Large"
+msgstr "Groß"
+
+#: inc/gutenberg.php:109
+msgctxt "block font size"
+msgid "Extra Large"
+msgstr "Sehr groß"
+
+#: inc/gutenberg.php:114
+msgctxt "block font size"
+msgid "Huge"
+msgstr "Riesig"
+
+#: inc/gutenberg.php:124 inc/template-tags.php:448
+msgid "lilo"
+msgstr "LiLO"
+
+#: inc/gutenberg.php:128
+msgid "Portfolio"
+msgstr "Portfolio"
+
+#: inc/gutenberg.php:134
+msgid "Services"
+msgstr "Dienstleistungen"
+
+#: inc/gutenberg.php:140
+msgid "About"
+msgstr "Über"
+
+#: inc/gutenberg.php:146
+msgid "Projects"
+msgstr "Projekte"
+
+#: inc/template-tags.php:120
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Suchergebnisse für: %s"
+
+#: inc/template-tags.php:273
+#, php-format
+msgid "View all posts by %s"
+msgstr "Alle Beiträge von %s anzeigen"
+
+#: inc/template-tags.php:298
+msgid "No comments"
+msgstr "Keine Kommentare"
+
+#: inc/template-tags.php:299
+msgid "1 comment"
+msgstr "1 Kommentar"
+
+#: inc/template-tags.php:300
+#, php-format
+msgid "% comments"
+msgstr "% Kommentare"
+
+#: inc/template-tags.php:336
+msgid "Tagged with"
+msgstr "Getaggt mit"
+
+#: inc/template-tags.php:375
+msgctxt "post navigation"
+msgid "Previous Post"
+msgstr "Vorheriger Beitrag"
+
+#: inc/template-tags.php:376
+msgctxt "post navigation"
+msgid "Next Post"
+msgstr "Nächster Beitrag"
+
+#: inc/template-tags.php:410
+msgctxt "pagination"
+msgid "Previous Posts"
+msgstr "Vorherige Beiträge"
+
+#: inc/template-tags.php:411
+msgctxt "pagination"
+msgid "Next Posts"
+msgstr "Nächste Beiträge"
+
+#: inc/template-tags.php:447
+#, php-format
+msgid "WordPress Theme: %1$s by %2$s."
+msgstr "WordPress-Theme: %1$s von %2$s."
+
+#: inc/theme-info.php:19
+#, php-format
+msgid "Welcome to %1$s %2$s"
+msgstr "Willkommen bei %1$s %2$s"
+
+#: functions.php:20 
+msgid "LiLO Readme"
+msgstr "LiLO Readme"
+
+#: searchform.php:13 searchform.php:17
+msgctxt "label"
+msgid "Search for:"
+msgstr "Suche nach:"
+
+#: searchform.php:15
+msgctxt "placeholder"
+msgid "Search &hellip;"
+msgstr "Suche &hellip;"
+
+#: searchform.php:21
+msgctxt "submit button"
+msgid "Search"
+msgstr "Suchen"
+
+#: template-parts/header/site-navigation.php:21
+msgid "Menu"
+msgstr "Menü"
+
+#: template-parts/header/site-navigation.php:26
+msgid "Primary Menu"
+msgstr "Primärmenü"
+
+#: template-parts/page/content-none.php:16
+msgid "Nothing Found"
+msgstr "Nichts gefunden"
+
+#: template-parts/page/content-none.php:25
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "Bereit, Ihren ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Hier starten</a>."
+
+#: template-parts/page/content-none.php:29
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr "Entschuldigung, aber nichts entsprach Ihren Suchbegriffen. Bitte versuchen Sie es erneut mit anderen Schlüsselwörtern."
+
+#: template-parts/page/content-none.php:34
+msgid "It seems we can’t find what you’re looking for. Perhaps searching can help."
+msgstr "Es scheint, dass wir nicht finden können, wonach Sie suchen. Vielleicht hilft eine Suche."
