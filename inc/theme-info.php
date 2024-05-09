@@ -18,7 +18,7 @@ function lilo_theme_info_menu_link() {
 
 	add_theme_page(
 		sprintf( esc_html__( 'Welcome to %1$s %2$s', 'lilo' ), $theme->display( 'Name' ), $theme->display( 'Version' ) ),
-		esc_html__( 'LiLO Readme', 'lilo' ),
+		esc_html__( 'LiLO-Setup', 'lilo' ),
 		'edit_theme_options',
 		'lilo',
 		'lilo_theme_info_page'

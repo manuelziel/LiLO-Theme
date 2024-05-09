@@ -522,8 +522,8 @@ msgstr "WordPress-Theme: %1$s von %2$s."
 msgid "Welcome to %1$s %2$s"
 msgstr "%1$s %2$s"
 
-#: functions.php:20 
-msgid "LiLO Readme"
+#: theme-info.php:21 
+msgid "LiLO-Setup"
 msgstr "LiLO-Setup"
 
 #: searchform.php:13 searchform.php:17
