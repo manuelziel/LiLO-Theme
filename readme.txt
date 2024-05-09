@@ -3,7 +3,7 @@ Author URI: https://liste-lebenswerte-ortenau.de
 Theme URI: https://liste-lebenswerte-ortenau.de
 Contributors: LiLO
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, block-patterns, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
-Requires at least: 6
+Requires at least: 6.0
 Tested up to: 6.5.2
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -19,42 +19,37 @@ This Theme is used for LiLO (Liste Lebenswerte Ortenau) and LHL (Liste Haslach L
 Current base funtions:
 - Remove categories on home feed. To remove set the current ID's in the functions.php code.
 - Search form at primary navigation
-- Primary Navigation has now max-width: 1500px;
 - Extra Styles: 
-    - theme 
-    - primary navigation fixes and search form
-    - button style
-    - responsive style
     - plugins (Tribe Events)
 
 Roadmap:
-- nothing
+- Change colors to red and green
+- More social media links
+- Social media sidebar at page border 
+- Extra styles in extra stylesheet
 
 == Installation ==
-
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
 2. Click on the 'Upload Theme' button to upload the Zip-File of the theme.
-
-== Examples ==
-
-Anchor:
-Use https://liste-lebenswerte-ortenau.de/example-site-or-article/#example-headline
-Unwanted characters are ÄäÖöÜüß and convert it to ae oe ue , but allows umlauts and ß 
-
-Button Paypal:
-Use [lilo_paypal_donate_button] as shortcode for LiLO.
-Use [lhl_paypal_donate_button] as shortcode for LHL.
 
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 2.1.0 - 2024-05-09 =
+- Add function to custromize exclude specific categories at home
+
+= 2.0.1 - 2024-05-08 =
+- Change page background to #fff
+- FIX style hover button links in menu
+- FIX style search result for events max-width 480px
+- FIX translation in pom for "tags"
+
 = 2.0.0 - 2024-05-06 =
 - Add default settings
-- Fix styles
+- FIX styles
 - Compress style
 - Add readme and changelog to theme information
 - Add language function
-
 
 = 1.3.0 - 2024-04-29 =
 - Add button hover style, menu-item, link, header, categories, more-link

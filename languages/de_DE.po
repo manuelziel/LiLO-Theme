@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: LiLO\n"
 "Report-Msgid-Bugs-To: https://liste-lebenswerte-ortenau.de/\n"
-"POT-Creation-Date: 2021-05-18 14:34+0200\n"
-"PO-Revision-Date: 2024-05-05 18:00+0100\n"
-"Last-Translator: Ihr Name <Ihre E-Mail>\n"
+"POT-Creation-Date: 2024-05-06 14:34+0200\n"
+"PO-Revision-Date: 2024-05-09 18:00+0100\n"
+"Last-Translator: Ihr Name <ManuelZiel@gmail.com>\n"
 "Language-Team: de_DE <info@liste-lebenswerte-ortenau.de>\n"
 "Language: de_DE\n"
 "MIME-Version: 1.0\n"
@@ -490,7 +490,7 @@ msgstr "% Kommentare"
 
 #: inc/template-tags.php:336
 msgid "Tagged with"
-msgstr "Getaggt mit"
+msgstr "Schlagwörter"
 
 #: inc/template-tags.php:375
 msgctxt "post navigation"
@@ -520,11 +520,11 @@ msgstr "WordPress-Theme: %1$s von %2$s."
 #: inc/theme-info.php:19
 #, php-format
 msgid "Welcome to %1$s %2$s"
-msgstr "Willkommen bei %1$s %2$s"
+msgstr "%1$s %2$s"
 
 #: functions.php:20 
 msgid "LiLO Readme"
-msgstr "LiLO Readme"
+msgstr "LiLO-Setup"
 
 #: searchform.php:13 searchform.php:17
 msgctxt "label"

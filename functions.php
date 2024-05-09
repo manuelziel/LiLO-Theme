@@ -2,6 +2,7 @@
 /**
  * LiLO functions and definitions
  *
+ * @version 1.1
  * @package LiLO
  */
 
@@ -254,13 +255,19 @@ function lilo_add_search_form_to_menu($items, $args) {
 add_filter('wp_nav_menu_items', 'lilo_add_search_form_to_menu', 10, 2);
 
 /**
- * Remove categories on home feed
+ * Remove categories on home feed based on theme settings
  */
 function lilo_exclude_specific_categories_home($query) {
     if ($query->is_home() && $query->is_main_query()) {
-        // set IDs of the categories to remove
-        // current is "Anfragen (301)", "Kreistag Abstimmungen (508)"
-        $query->set('cat', '-301,-508');
+		// Retrieve the excluded category IDs from the theme options
+		$excluded_categories = get_option('lilo_category_exclude_ids', '');
+		$excluded_categories_array = explode(',', $excluded_categories);
+
+		// Prepare the string for the query
+		$excluded_categories_string = '-' . implode(',-', $excluded_categories_array);
+
+		// Set the categories to be excluded
+		$query->set('cat', $excluded_categories_string);
     }
 }
 add_action('pre_get_posts', 'lilo_exclude_specific_categories_home');

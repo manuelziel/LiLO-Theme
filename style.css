@@ -5,8 +5,8 @@ Theme Name: LiLO
 Theme URI: https://liste-lebenswerte-ortenau.de/
 Author: Manuel Ziel
 Author URI: https://liste-lebenswerte-ortenau.de/
-Description: A responsive, multipurpose Blogging and Magazine WordPress theme with bold colors and fonts. It comes with a featured content area, various blog layouts and extensive post settings. LiLO is the successor of the popular Dynamic News theme.
-Version: 2.0.0
+Description: LiLO is a custom WordPress theme specifically designed for LiLO. It is perfectly suited for blogs and magazines. LiLO is responsive, multipurpose Blogging and Magazine WordPress theme with bold colors and fonts. It comes with a featured content area, various blog layouts and extensive post settings. LiLO is the successor of the popular Dynamic News theme.
+Version: 2.1.0
 Requires at least: 6.0
 Tested up to: 6.5
 Requires PHP: 5.6
@@ -34,6 +34,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 # - Typography
 # - Elements
 # - Forms
+# - Button Hover Style
 # - Accessibility
 # - Alignments
 # - Layout Structure
@@ -63,6 +64,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 	--lilo--gray-color: #777777;
 	--lilo--dark-gray-color: #333333;
 	--lilo--page-background-color: #fff;
+	--lilo--shadow-color: #777777;
 	--lilo--text-color: rgba(0, 0, 0, 0.9);
 	--lilo--medium-text-color: rgba(0, 0, 0, 0.6);
 	--lilo--light-text-color: rgba(0, 0, 0, 0.4);
@@ -441,7 +443,7 @@ big {
 
 body {
 	margin: 0;
-	background: #ededef; /* Fallback for when there is no custom background color defined. */
+	background: #fff; /* Fallback for when there is no custom background color defined. */
 }
 
 blockquote {
@@ -697,6 +699,79 @@ textarea {
 .search-menu-item:hover {
     background-color: var(--lilo--navi-hover-color);
     color: var(--lilo--navi-hover-text-color);
+}
+
+/*--------------------------------------------------------------
+# - Button Hover Style
+--------------------------------------------------------------*/
+a:not(.search-menu-item, .menu-item a, .post-categories a, .more-link):hover {
+    transform: none;
+    transition: none;
+}
+
+/* Full hover effect high */
+.main-navigation ul li a {
+    display: block;  
+    padding: 1.15rem 1.5rem;  
+    margin: 0;  
+    height: 100%; 
+}
+
+.menu-item a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.search-menu-item:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.more-link:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.post-categories a:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.wp-block-social-link-anchor {
+    transition: none;
+}
+
+@media (max-width: 960px) {
+    .main-navigation li {
+        width: 100%;
+    }
+
+    .main-navigation li a {
+        display: block;
+        width: 100%;
+    }
+
+    .main-navigation ul.sub-menu {
+        width: 100%;
+    }
+	.main-navigation li a {
+    	display: block;
+    	width: 100%;
+    	transition: transform 0.3s ease-in-out;
+	}
+
+	.main-navigation li a:hover {
+    	transform: scale(1.05);
+	}
 }
 
 /*--------------------------------------------------------------
@@ -1284,12 +1359,8 @@ body.site-description-hidden .site-header .site-description {
 		margin: -0.5rem -0.5rem 1rem;
 	}
 
-	.has-sidebar .sidebar .widget.tzwb-tabbed-content .tzwb-tabnavi {
-		margin: -0.5rem -0.5rem 0;
-	}
-
 	.has-sidebar.has-box-shadow .sidebar .widget {
-		box-shadow: 0 0 4px #ddd;
+		box-shadow: 0 0 4px var(--lilo--shadow-color);
 	}
 }
 
@@ -3057,21 +3128,6 @@ figcaption,
 	font-weight: 400;
 }
 
-.site-info .widget .tzwb-posts-list .tzwb-entry-meta,
-.site-info .widget .tzwb-posts-list .tzwb-entry-meta span::after,
-.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:link,
-.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:visited,
-.site-info .widget .tzwb-comments-list .tzwb-comment-date {
-	color: rgba(255, 255, 255, 0.6);
-	color: var(--lilo--footer-link-hover-color);
-}
-
-.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:hover,
-.site-info .widget .tzwb-posts-list .tzwb-entry-meta a:active {
-	color: rgba(255, 255, 255, 0.6);
-	color: var(--lilo--footer-text-color);
-}
-
 /* Footer Line */
 .site-info .footer-text,
 .site-info .credit-link {
@@ -3207,8 +3263,7 @@ figcaption,
 	.featured-posts,
 	.pagination,
 	.widget,
-	.comments-area,
-	.themezee-related-posts {
+	.comments-area {
 		margin-bottom: 1.5rem;
 	}
 
@@ -3219,8 +3274,7 @@ figcaption,
 	.has-sidebar .archive-header,
 	.has-sidebar .search-header,
 	.has-sidebar .pagination,
-	.has-sidebar .comments-area,
-	.has-sidebar .themezee-related-posts {
+	.has-sidebar .comments-area{
 		padding: 1.5rem;
 		border: 1px solid;
 		border-color: rgba(0, 0, 0, 0.1);
@@ -3241,9 +3295,8 @@ figcaption,
 	.has-sidebar.has-box-shadow .archive-header,
 	.has-sidebar.has-box-shadow .search-header,
 	.has-sidebar.has-box-shadow .pagination,
-	.has-sidebar.has-box-shadow .comments-area,
-	.has-sidebar.has-box-shadow .themezee-related-posts {
-		box-shadow: 0 0 4px #ddd;
+	.has-sidebar.has-box-shadow .comments-area {
+		box-shadow: 0 0 4px var(--lilo--shadow-color);
 	}
 
 	.entry-header,
@@ -3566,7 +3619,7 @@ body.wide-theme-layout .site .site-footer {
 	}
 
 	body.wide-theme-layout:not(.is-blog-page):not(.has-sidebar).has-box-shadow .site-content {
-		box-shadow: 0 0 4px #ddd;
+		box-shadow: 0 0 4px var(--lilo--shadow-color);
 	}
 }
 
@@ -3654,23 +3707,13 @@ body.wide-theme-layout .site .site-footer {
     vertical-align: middle;
 }
 
-body.search .site .site-content .site-main .tribe_events.type-tribe_events.status-publish {
-    padding: 1.5rem;
-    border: 1px solid;
-    border-color: rgba(0, 0, 0, 0.1);
-    border-color: var(--lilo--content-border-color);
-    background: #fff;
-    margin-bottom: 1.5rem;
-    box-shadow: 0 0 4px #ddd;
-}
-
 /* style for tribe events articles within post-wrapper */
 .post-wrapper .tribe_events.type-tribe_events.status-publish {
     padding: 1.5rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     background: #fff;
     margin-bottom: 1.5rem;
-    box-shadow: 0 0 4px #ddd;
+    box-shadow: 0 0 4px var(--lilo--shadow-color);
 }
 
 /* hide image in tribe events */
@@ -3716,7 +3759,27 @@ body.search .site .site-content .site-main .tribe_events.type-tribe_events.statu
     display: none;
 }
 
-@media only screen and (min-width: 480px) {}
+@media only screen and (max-width: 480px) {
+	body.search .site .site-content .site-main .tribe_events.type-tribe_events.status-publish {
+		padding: 0;
+		border: none;
+		background: #fff;
+		margin-bottom: 0;
+		box-shadow: none;
+	}
+}
+
+@media only screen and (min-width: 480px) {
+	body.search .site .site-content .site-main .tribe_events.type-tribe_events.status-publish {
+		padding: 1.5rem;
+		border: 1px solid;
+		border-color: rgba(0, 0, 0, 0.1);
+		border-color: var(--lilo--content-border-color);
+		background: #fff;
+		margin-bottom: 1.5rem;
+		box-shadow: 0 0 4px var(--lilo--shadow-color);
+	}
+}
 
 /* adjustments for larger screens (at least 768px width) */
 @media screen and (min-width: 880px) {
@@ -3747,77 +3810,4 @@ body.search .site .site-content .site-main .tribe_events.type-tribe_events.statu
     width: 150px; 
     height: 55px;
     margin: 0 auto; 
-}
-
-/*--------------------------------------------------------------
-# - Button Hover Style
---------------------------------------------------------------*/
-a:not(.search-menu-item, .menu-item a, .post-categories a, .more-link):hover {
-    transform: none;
-    transition: none;
-}
-
-/* Full hover effect high */
-.main-navigation ul li a {
-    display: block;  
-    padding: 1.15rem 1.5rem;  
-    margin: 0;  
-    height: 100%; 
-}
-
-.menu-item a:hover {
-    transform: scale(1.1); /* 10 % */
-    transition: transform 0.3s ease;
-    display: inline-block;
-}
-
-.search-menu-item:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.more-link:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-}
-
-h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
-    display: inline-block;
-    transition: transform 0.3s ease-in-out;
-}
-
-.post-categories a:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease-in-out;
-    display: inline-block;
-}
-
-.wp-block-social-link-anchor {
-    transition: none;
-}
-
-@media (max-width: 960px) {
-    .main-navigation li {
-        width: 100%;
-    }
-
-    .main-navigation li a {
-        display: block;
-        width: 100%;
-    }
-
-    .main-navigation ul.sub-menu {
-        width: 100%;
-    }
-	.main-navigation li a {
-    	display: block;
-    	width: 100%;
-    	transition: transform 0.3s ease-in-out;
-	}
-
-	.main-navigation li a:hover {
-    	transform: scale(1.05);
-	}
 }
