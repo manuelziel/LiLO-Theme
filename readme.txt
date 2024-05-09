@@ -35,6 +35,9 @@ Roadmap:
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 2.1.1 - 2024-05-?? =
+- FIX translation in theme-info 21 to LiLO-Setup
+
 = 2.1.0 - 2024-05-09 =
 - Add function to custromize exclude specific categories at home
 

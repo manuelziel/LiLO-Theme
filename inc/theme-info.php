@@ -150,7 +150,7 @@ function lilo_theme_info_page() {
 			Anchor:
 			<br>
 			Use (https://liste-lebenswerte-ortenau.de/example-site-or-article/<strong>#example-headline</strong>)
-			Unwanted characters are ÄäÖöÜüß and converted to ae oe ue, umlauts and ß are not allowed.
+			Unwanted characters are ÄäÖöÜüß and converted to ae oe ue ss, umlauts and ß are not allowed.
 			<br>
 			<br>
 			Button Paypal:
