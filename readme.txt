@@ -16,17 +16,24 @@ Customized styles and functions by Manuel Ziel.
 == Description ==
 This Theme is used for LiLO (Liste Lebenswerte Ortenau) and LHL (Liste Haslach Lebenswert).
 
-Current base funtions:
+Current base functions:
 - Remove categories on home feed. To remove set the current ID's in the functions.php code.
 - Search form at primary navigation
 - Extra Styles: 
     - plugins (Tribe Events)
 
 Roadmap:
-- Change colors to red and green
+- Create corporate design help site 
+- Change colors for LiLO and LHL
 - More social media links
-- Social media sidebar at page border 
-- Extra styles in extra stylesheet
+- Implement social media sidebar at page border
+- Include extra styles in an additional stylesheet
+- Add variables in CSS for responsive design and colors 
+- Minimize color variables
+- Define Fonts, remove unused fonts
+- Add scroll to top feature
+- Develop a new, smarter Headerstyle
+- Implement responsive design for various devices (Smartphones: 520px, Tablets: 960px, Desktop: 960px and larger)
 
 == Installation ==
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
@@ -36,10 +43,16 @@ Roadmap:
 Semantic Versioning -> https://semver.org/
 
 = 2.1.1 - 2024-05-?? =
-- FIX translation in theme-info 21 to LiLO-Setup
+- FIX translation in the following files: 
+    - theme-info.php:21
+    - 404.php:22
+    - template-parts/page/content-none.php:29 
+    - template-parts/page/content-none.php:34
+    - footer-copyright.php:21
+    - footer-copyright.php:22
 
 = 2.1.0 - 2024-05-09 =
-- Add function to custromize exclude specific categories at home
+- Add function to customize and exclude specific categories at home
 
 = 2.0.1 - 2024-05-08 =
 - Change page background to #fff

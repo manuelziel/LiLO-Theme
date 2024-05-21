@@ -79,7 +79,7 @@ function lilo_default_options() {
 		'featured_category'      => 0,
 		'featured_layout'        => 1,
 		'footer_text'            => '',
-		'credit_link'            => true,
+		'credit_link'            => false,
 	);
 
 	return apply_filters( 'lilo_default_options', $default_options );

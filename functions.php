@@ -259,6 +259,7 @@ add_filter('wp_nav_menu_items', 'lilo_add_search_form_to_menu', 10, 2);
  */
 function lilo_exclude_specific_categories_home($query) {
     if ($query->is_home() && $query->is_main_query()) {
+		
 		// Retrieve the excluded category IDs from the theme options
 		$excluded_categories = get_option('lilo_category_exclude_ids', '');
 		$excluded_categories_array = explode(',', $excluded_categories);

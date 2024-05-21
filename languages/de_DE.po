@@ -19,7 +19,7 @@ msgstr "404: Seite nicht gefunden"
 msgid ""
 "It looks like nothing was found at this location. Maybe try a search or one "
 "of the links below?"
-msgstr "An dieser Stelle wurde nichts gefunden. Versuchen Sie eine Suche oder einen der untenstehenden Links."
+msgstr "An dieser Stelle wurde nichts gefunden. Versuche eine andere Suche oder einen der untenstehenden Links."
 
 #: comments.php:33
 msgid "One comment"
@@ -554,14 +554,13 @@ msgid "Nothing Found"
 msgstr "Nichts gefunden"
 
 #: template-parts/page/content-none.php:25
-#, php-format
 msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr "Bereit, Ihren ersten Beitrag zu veröffentlichen? <a href=\"%1$s\">Hier starten</a>."
 
 #: template-parts/page/content-none.php:29
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
-msgstr "Entschuldigung, aber nichts entsprach Ihren Suchbegriffen. Bitte versuchen Sie es erneut mit anderen Schlüsselwörtern."
+msgstr "Entschuldigung, aber nichts entsprach deinem Suchbegriff. Bitte versuche es erneut mit anderen Schlüsselwörtern."
 
 #: template-parts/page/content-none.php:34
 msgid "It seems we can’t find what you’re looking for. Perhaps searching can help."
-msgstr "Es scheint, dass wir nicht finden können, wonach Sie suchen. Vielleicht hilft eine Suche."
+msgstr "Es scheint, dass wir nicht finden können, wonach du suchst. Vielleicht hilft eine weitere Suche."
