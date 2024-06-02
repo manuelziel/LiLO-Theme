@@ -23,6 +23,8 @@ Current base functions:
     - plugins (Tribe Events)
 
 Roadmap:
+- Create function to exclude custom post and sites from search
+- Create accordion Menu for Gutenberg
 - Create corporate design help site 
 - Change colors for LiLO and LHL
 - More social media links
