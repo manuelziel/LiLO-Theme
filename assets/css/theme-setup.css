@@ -1,0 +1,250 @@
+/*
+ * Theme Setup CSS
+ *
+ * CSS Stylesheet for Theme Setup page on Appearance -> Theme Setup
+ *
+ * @package LiLO
+ */
+
+/*--------------------------------------------------------------
+# - CSS Variables
+--------------------------------------------------------------*/
+:root {
+	/* Default colors (LiLO) */
+	--primary-color-one: #cc3333;
+	--primary-color-two: #333333;	 /* must be dark 20% */
+	--primary-color-three: #ffffff; /* must be white */
+	--secondary-color-one: #808080; /* must be 50%*/
+	--secondary-color-two: #cccccc; /* must be light 80% */
+	--accent-color: #CC3333;
+}
+
+body.lhl {
+	/* LHL colors */
+	--primary-color-one: #408000;
+	--primary-color-two: #333333;	 /* must be dark 20%*/
+	--primary-color-three: #ffffff; /* must be white */
+	--secondary-color-one: #808080; /* must be 50% */
+	--secondary-color-two: #cccccc; /* must be light 80% */
+	--accent-color: #408000;
+  }
+  
+  body.manu {
+	/* Manu colors */
+	--primary-color-one: #3771c8;
+	--primary-color-two: #060E1A;	/* must be dark 20%*/
+	--primary-color-three: #ffffff;/* must be white */
+	--secondary-color-one: #808080;/* must be 50% */
+	--secondary-color-two: #cccccc;/* must be light 80% */
+	--accent-color: #3771c8;
+  }
+
+:root {
+	--lilo--primary-color: var(--primary-color-one);
+	--lilo--secondary-color: #cb3e3e; /* ? */
+	--lilo--tertiary-color: #ae3535; /* ? */
+	--lilo--accent-color: var(--accent-color);
+	--lilo--contrast-color: #4747e8; /* ? */
+	--lilo--highlight-color: #e8e847; /* ? */
+	--lilo--light-gray-color: var(--secondary-color-two);
+	--lilo--gray-color: var(--secondary-color-one);
+	--lilo--dark-gray-color: var(--primary-color-two);
+	--lilo--page-background-color: var(--primary-color-three);
+	--lilo--shadow-color: var(--secondary-color-one);
+	--lilo--text-color: rgba(0, 0, 0, 0.9);
+	--lilo--medium-text-color: rgba(0, 0, 0, 0.6);
+	--lilo--light-text-color: rgba(0, 0, 0, 0.4);
+	--lilo--medium-border-color: rgba(0, 0, 0, 0.3);
+	--lilo--light-border-color: rgba(0, 0, 0, 0.1);
+	--lilo--content-border-width: 1px solid;
+	--lilo--link-color: var(--primary-color-one);
+	--lilo--link-hover-color: var(--primary-color-one);
+	--lilo--button-color: var(--primary-color-one);
+	--lilo--button-text-color: var(--primary-color-three);
+	--lilo--button-hover-color: var(--primary-color-two);
+	--lilo--button-hover-text-color: var(--primary-color-three);
+	--lilo--header-background-color: var(--primary-color-three);
+	--lilo--header-text-color: var(--primary-color-two);
+	--lilo--site-title-color: var(--primary-color-one);
+	--lilo--site-title-hover-color: var(--primary-color-two);
+	--lilo--navi-background-color: var(--primary-color-two);
+	--lilo--navi-text-color: var(--primary-color-three);
+	--lilo--navi-hover-color: var(--primary-color-one);
+	--lilo--navi-hover-text-color: var(--primary-color-three);
+	--lilo--navi-border-color: var(--primary-color-three);
+	--lilo--submenu-background-color: var(--primary-color-three);
+	--lilo--submenu-text-color: var(--primary-color-two);
+	--lilo--submenu-border-color: rgba(0, 0, 0, 0.5);
+	--lilo--featured-background-color: var(--primary-color-two);
+	--lilo--featured-text-color: var(--primary-color-three);
+	--lilo--featured-hover-color: rgba(255, 255, 255, 0.6);
+	--lilo--featured-border-color: var(--primary-color-one);
+	--lilo--title-color: var(--primary-color-two);
+	--lilo--title-hover-color: var(--primary-color-one);
+	--lilo--post-meta-background-color: var(--secondary-color-two);
+	--lilo--content-border-color: rgba(0, 0, 0, 0.0); /* off */
+	--lilo--widget-title-background-color: var(--primary-color-two);
+	--lilo--widget-title-text-color: var(--primary-color-three);
+	--lilo--widget-border-color: rgba(0, 0, 0, 0.1);
+	--lilo--footer-background-color: var(--primary-color-two);
+	--lilo--footer-overlay-color: rgba(255, 255, 255, 0.05);
+	--lilo--footer-text-color: rgba(255, 255, 255, 0.6);
+	--lilo--footer-link-color: var(--primary-color-three);
+	--lilo--footer-link-hover-color: rgba(255, 255, 255, 0.6);
+	--lilo--footer-border-color: rgba(255, 255, 255, 0.1);
+	--lilo--text-font: "Ubuntu", arial, helvetica, sans-serif;
+	--lilo--title-font: "Francois One", arial, helvetica, sans-serif;
+	--lilo--navi-font: "Francois One", arial, helvetica, sans-serif;
+	--lilo--widget-title-font: "Ubuntu", arial, helvetica, sans-serif;
+	--lilo--title-font-weight: normal;
+	--lilo--navi-font-weight: normal;
+	--lilo--widget-title-font-weight: normal;
+	--lilo--title-text-transform: none;
+	--lilo--navi-text-transform: uppercase;
+	--lilo--widget-title-text-transform: uppercase;
+	--lilo--text-line-height: 1.75;
+	--lilo--title-line-height: 1.4;
+	--lilo--transition: transform 0.3s ease;
+	--lilo--transition-fast: all 0.15s ease;
+}
+
+/*--------------------------------------------------------------
+# - Theme Setup
+--------------------------------------------------------------*/
+.theme-setup-wrap {
+	position: relative;
+	margin: 25px 40px 0 20px;
+	max-width: 1050px;
+}
+
+.theme-setup-wrap img {
+	max-width: 100%;
+}
+
+/* Clearing Floats */
+.theme-setup-wrap .clearfix::before,
+.theme-setup-wrap .clearfix::after {
+	display: table;
+	content: " ";
+}
+
+.theme-setup-wrap .clearfix::after {
+	clear: both;
+}
+
+/* Columns */
+.theme-setup-wrap .columns-wrapper {
+	margin-right: -4em;
+}
+
+.theme-setup-wrap .columns-wrapper .column {
+	float: left;
+	box-sizing: border-box;
+	padding-right: 4em;
+}
+
+.theme-setup-wrap .columns-wrapper .column-half {
+	width: 50%;
+}
+
+.theme-setup-wrap .columns-wrapper .column-third {
+	width: 33.3333333333333%;
+}
+
+.theme-setup-wrap .columns-wrapper .column-quarter {
+	width: 25%;
+}
+
+/* Font Styles */
+.theme-setup-wrap h3 {
+	margin: 1em 0 0.6em;
+	font-size: 1.8em;
+	line-height: 1.5;
+}
+
+.theme-setup-wrap h4 {
+	margin: 0.2em 0;
+	font-size: 1.4em;
+}
+
+/* Theme Setup Header */
+.theme-setup-wrap h1 {
+	margin: 0.2em 0 0 0;
+	color: var(--lilo--title-color);
+	font-weight: normal;
+	font-size: 3em;
+	line-height: 1.2;
+}
+
+.theme-setup-wrap .theme-description {
+	margin: 1em 0;
+	min-height: 60px;
+	color: var(--lilo--gray-color);
+	font-weight: normal;
+	font-size: 1.4em;
+	line-height: 1.6;
+}
+
+/*--------------------------------------------------------------
+# - Accordion Menue
+--------------------------------------------------------------*/
+/* Accordion Styles */
+.accordion .accordion-header {
+	padding: 10px;
+    padding-right: 30px; 
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    position: relative;
+}
+
+.accordion-toggle {
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.accordion .accordion-header:not(.open) {
+	background-color: var(--lilo--navi-background-color);
+	color: var(--lilo--navi-text-color);
+}
+
+.accordion .accordion-header:hover {
+	background-color: var(--lilo--navi-hover-color);
+	transition: transform 0.3s ease-in-out;
+}
+
+.accordion .accordion-header.open {
+	background-color: var(--lilo--navi-hover-color);
+	color: var(--lilo--navi-text-color);
+}
+
+.accordion .accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	padding: 0 15px;
+}
+
+.accordion .accordion-content.open {
+	max-height: fit-content;
+	padding: 10px 15px;
+}
+
+/*--------------------------------------------------------------
+# - Excluded List
+--------------------------------------------------------------*/
+.excluded-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.excluded-item {
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+}

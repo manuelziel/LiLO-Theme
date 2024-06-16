@@ -281,14 +281,6 @@ msgstr "Linke Seitenleiste"
 msgid "Right Sidebar"
 msgstr "Rechte Seitenleiste"
 
-#: inc/customizer/sections/layout-settings.php:70
-msgid "Box Shadows"
-msgstr "Schatteneffekte"
-
-#: inc/customizer/sections/layout-settings.php:86
-msgid "Display shadows on content boxes"
-msgstr "Schatten auf Inhaltsboxen anzeigen"
-
 #: inc/customizer/sections/post-settings.php:19
 msgid "Post Settings"
 msgstr "Beitrag-Einstellungen"

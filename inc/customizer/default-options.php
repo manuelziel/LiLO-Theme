@@ -54,7 +54,6 @@ function lilo_default_options() {
 		'site_description'       => false,
 		'theme_layout'           => 'wide',
 		'sidebar_position'       => 'right-sidebar',
-		'box_shadow'             => true,
 		'blog_layout'            => 'vertical-list',
 		'blog_image'             => 'lilo-ultra-wide',
 		'blog_content'           => 'excerpt',

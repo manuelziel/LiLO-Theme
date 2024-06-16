@@ -2,6 +2,7 @@
 /**
  * Functions which enhance the theme by hooking into WordPress
  *
+ * @version 1.1
  * @package LiLO
  */
 
@@ -21,11 +22,6 @@ function lilo_body_classes( $classes ) {
 		$classes[] = 'wide-theme-layout';
 	} elseif ( 'centered' === $theme_options['theme_layout'] ) {
 		$classes[] = 'centered-theme-layout';
-	}
-
-	// Enable Box Shadows.
-	if ( true === $theme_options['box_shadow'] ) {
-		$classes[] = 'has-box-shadow';
 	}
 
 	// Add Sidebar class.

@@ -63,31 +63,5 @@ function lilo_customize_register_layout_settings( $wp_customize ) {
 			'right-sidebar' => esc_html__( 'Right Sidebar', 'lilo' ),
 		),
 	) );
-
-	// Add Box Shadow setting.
-	$wp_customize->add_control( new LiLO_Customize_Header_Control(
-		$wp_customize, 'lilo_theme_options[box_shadow_title]', array(
-			'label'    => esc_html__( 'Box Shadows', 'lilo' ),
-			'section'  => 'lilo_section_layout',
-			'settings' => array(),
-			'priority' => 30,
-		)
-	) );
-
-	// Add Setting and Control for box shadow setting.
-	$wp_customize->add_setting( 'lilo_theme_options[box_shadow]', array(
-		'default'           => $default['box_shadow'],
-		'type'              => 'option',
-		'transport'         => 'postMessage',
-		'sanitize_callback' => 'lilo_sanitize_checkbox',
-	) );
-
-	$wp_customize->add_control( 'lilo_theme_options[box_shadow]', array(
-		'label'    => esc_html__( 'Display shadows on content boxes', 'lilo' ),
-		'section'  => 'lilo_section_layout',
-		'settings' => 'lilo_theme_options[box_shadow]',
-		'type'     => 'checkbox',
-		'priority' => 40,
-	) );
 }
 add_action( 'customize_register', 'lilo_customize_register_layout_settings' );

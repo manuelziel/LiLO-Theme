@@ -4,7 +4,7 @@ Theme URI: https://liste-lebenswerte-ortenau.de
 Contributors: LiLO
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, block-patterns, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
 Requires at least: 6.0
-Tested up to: 6.5.2
+Tested up to: 6.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -23,19 +23,10 @@ Current base functions:
     - plugins (Tribe Events)
 
 Roadmap:
-- Create function to exclude custom post and sites from search
-- Create accordion Menu for Gutenberg
-- Create corporate design help site 
-- Change colors for LiLO and LHL
 - More social media links
 - Implement social media sidebar at page border
 - Include extra styles in an additional stylesheet
-- Add variables in CSS for responsive design and colors 
-- Minimize color variables
-- Define Fonts, remove unused fonts
-- Add scroll to top feature
-- Develop a new, smarter Headerstyle
-- Implement responsive design for various devices (Smartphones: 520px, Tablets: 960px, Desktop: 960px and larger)
+- New, smarter Headerstyle
 
 == Installation ==
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
@@ -44,7 +35,20 @@ Roadmap:
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
-= 2.1.1 - 2024-05-?? =
+= 2.2.0 - 2024-06-16 =
+- Add scroll to top feature
+- Add function to exclude custom posts and pages from search results
+- Add a Styleguide section to the admin page under the Appearance menu
+- Add Accordion menu to Gutenberg-editor
+- Add a Color Scheme option to the Customizer, with the schemes LiLO, LHL, and Manu available
+- Add full wide elements
+- FIX Color scheme for LiLO
+- FIX Stylesheet
+- Remove shadow function from style
+- Change Responsive style for smartphones and tablets up to 960px and desktop and above from 960px
+
+
+= 2.1.1 - 2024-05-30 =
 - FIX translation in the following files: 
     - theme-info.php:21
     - 404.php:22

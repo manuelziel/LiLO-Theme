@@ -14,6 +14,7 @@ require( get_template_directory() . '/inc/customizer/controls/headline-control.p
 
 // Load Customizer Sections.
 require( get_template_directory() . '/inc/customizer/sections/website-settings.php' );
+require( get_template_directory() . '/inc/customizer/sections/colors-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/layout-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/featured-posts-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
@@ -67,3 +68,46 @@ function lilo_customizer_controls_css() {
 	wp_enqueue_style( 'lilo-customizer-controls', get_template_directory_uri() . '/assets/css/customizer-controls.css', array(), '20201119' );
 }
 add_action( 'customize_controls_print_styles', 'lilo_customizer_controls_css' );
+
+/**
+ * Add inline CSS based on customizer settings
+ */
+function lilo_customizer_css() {
+    $selected_color_scheme = get_theme_mod('theme_color_scheme', 'lilo');
+
+    switch ($selected_color_scheme) {
+        case 'lhl':
+            $primary_color_one = '#408000';
+            $primary_color_two = '#333333';
+            $primary_color_three = '#ffffff';
+            $secondary_color_one = '#808080';
+            $secondary_color_two = '#cccccc';
+            $accent_color = '#408000';
+            break;
+        case 'manu':
+            $primary_color_one = '#3771c8';
+            $primary_color_two = '#060E1A';
+            $primary_color_three = '#ffffff';
+            $secondary_color_one = '#808080';
+            $secondary_color_two = '#cccccc';
+            $accent_color = '#3771c8';
+            break;
+        default:
+            $primary_color_one = '#cc3333';
+            $primary_color_two = '#333333';
+            $primary_color_three = '#ffffff';
+            $secondary_color_one = '#808080';
+            $secondary_color_two = '#cccccc';
+            $accent_color = '#cc3333';
+    }
+
+    echo "<style>:root {
+        --primary-color-one: {$primary_color_one};
+        --primary-color-two: {$primary_color_two};
+        --primary-color-three: {$primary_color_three};
+        --secondary-color-one: {$secondary_color_one};
+        --secondary-color-two: {$secondary_color_two};
+        --accent-color: {$accent_color};
+    }</style>";
+}
+add_action('wp_head', 'lilo_customizer_css');

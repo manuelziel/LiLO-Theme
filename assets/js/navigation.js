@@ -1,4 +1,3 @@
-/* global LiLOScreenReaderText */
 /**
  * Theme Navigation
  *

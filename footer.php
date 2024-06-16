@@ -28,6 +28,7 @@
 
 			<?php do_action( 'lilo_footer_menu' ); ?>
 			<?php get_template_part( 'template-parts/footer/footer', 'copyright' ); ?>
+			<a href="#top" id="scroll-to-top" style="display: none;">&#9650;</a>
 
 		</footer><!-- #colophon -->
 

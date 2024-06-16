@@ -2,7 +2,7 @@
 /**
  * LiLO functions and definitions
  *
- * @version 1.1
+ * @version 1.2
  * @package LiLO
  */
 
@@ -229,6 +229,34 @@ function lilo_add_image_size_names( $sizes ) {
 add_filter( 'image_size_names_choose', 'lilo_add_image_size_names' );
 
 /**
+ * Add accordion to fontent
+ */
+function enqueue_accordion_script() {
+    wp_enqueue_script(
+        'accordion-lilo',
+        get_template_directory_uri() . '/assets/js/accordion.js',
+        array(),
+        filemtime(get_template_directory() . '/assets/js/accordion.js'),
+        false
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_accordion_script');
+
+/**
+ * Add scroll to top button
+ */
+function enqueue_scroll_to_top_script() {
+    wp_enqueue_script(
+        'scroll-to-top-lilo',
+        get_template_directory_uri() . '/assets/js/scroll-to-top.js',
+        array(),
+        filemtime(get_template_directory() . '/assets/js/scroll-to-top.js'),
+        false
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_scroll_to_top_script');
+
+/**
  * Add search form to main navigation
  */
 function lilo_add_search_form_to_menu($items, $args) {
@@ -272,6 +300,22 @@ function lilo_exclude_specific_categories_home($query) {
     }
 }
 add_action('pre_get_posts', 'lilo_exclude_specific_categories_home');
+
+/**
+ * Remove posts and pages from search based on theme settings
+ */
+function lilo_exclude_posts_pages_from_search($query) {
+	if ($query->is_search() && !is_admin()) {
+		$exclude_post_pages_ids = get_option('lilo_post_page_exclude_ids', '');
+		$exclude_post_pages_array = array_filter(array_map('intval', array_map('trim', explode(',', $exclude_post_pages_ids))));
+
+		if (!empty($exclude_post_pages_array)) {
+            $query->set('post__not_in', $exclude_post_pages_array);
+        }
+	}
+	return $query;
+}
+add_filter('pre_get_posts', 'lilo_exclude_posts_pages_from_search');
 
 /**
  * String for anchor without unwanted characters, but allows umlauts and ß 
@@ -343,7 +387,7 @@ add_shortcode('lhl_paypal_donate_button', 'lhl_paypal_donate_button_shortcode');
  * Include Files
  */
 // Include Theme Info page.
-require get_template_directory() . '/inc/theme-info.php';
+require get_template_directory() . '/inc/theme-setup.php';
 
 // Include Customizer Options.
 require get_template_directory() . '/inc/customizer/customizer.php';

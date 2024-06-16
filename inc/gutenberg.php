@@ -24,68 +24,51 @@ function lilo_gutenberg_support() {
 
 	// Define block color palette.
 	$color_palette = apply_filters( 'lilo_color_palette', array(
-		'primary_color'    => '#e84747',
-		'secondary_color'  => '#cb3e3e',
-		'tertiary_color'   => '#ae3535',
-		'contrast_color'   => '#4747e8',
-		'accent_color'     => '#47e897',
-		'highlight_color'  => '#e8e847',
-		'light_gray_color' => '#eeeeee',
-		'gray_color'       => '#777777',
-		'dark_gray_color'  => '#333333',
+		'primary_color_one_lilo'  	=> '#cc3333',
+		'primary_color_one_lhl'  	=> '#408000',
+		'primary_color_one_manu'  	=> '#3771c8',
+		'primary_color_two'  	=> '#333333',
+		'primary_color_three' 	=> '#ffffff',
+		'secondary_color_one'   => '#808080',
+		'secondary_color_two'	=> '#cccccc',
 	) );
 
 	// Add theme support for block color palette.
 	add_theme_support( 'editor-color-palette', apply_filters( 'lilo_editor_color_palette_args', array(
 		array(
-			'name'  => esc_html_x( 'Primary', 'block color', 'lilo' ),
-			'slug'  => 'primary',
-			'color' => esc_html( $color_palette['primary_color'] ),
+			'name'  => esc_html_x( 'Primary One LiLO', 'block color', 'lilo' ),
+			'slug'  => 'primary one lilo',
+			'color' => esc_html( $color_palette['primary_color_one_lilo'] ),
 		),
 		array(
-			'name'  => esc_html_x( 'Secondary', 'block color', 'lilo' ),
-			'slug'  => 'secondary',
-			'color' => esc_html( $color_palette['secondary_color'] ),
+			'name'  => esc_html_x( 'Primary One LHL', 'block color', 'lilo' ),
+			'slug'  => 'primary one lhl',
+			'color' => esc_html( $color_palette['primary_color_one_lhl'] ),
 		),
 		array(
-			'name'  => esc_html_x( 'Tertiary', 'block color', 'lilo' ),
-			'slug'  => 'tertiary',
-			'color' => esc_html( $color_palette['tertiary_color'] ),
+			'name'  => esc_html_x( 'Primary One Manu', 'block color', 'lilo' ),
+			'slug'  => 'primary one manu',
+			'color' => esc_html( $color_palette['primary_color_one_manu'] ),
 		),
 		array(
-			'name'  => esc_html_x( 'Contrast', 'block color', 'lilo' ),
-			'slug'  => 'contrast',
-			'color' => esc_html( $color_palette['contrast_color'] ),
+			'name'  => esc_html_x( 'Primary Two', 'block color', 'lilo' ),
+			'slug'  => 'primary two',
+			'color' => esc_html( $color_palette['primary_color_two'] ),
 		),
 		array(
-			'name'  => esc_html_x( 'Accent', 'block color', 'lilo' ),
-			'slug'  => 'accent',
-			'color' => esc_html( $color_palette['accent_color'] ),
+			'name'  => esc_html_x( 'Primary Three', 'block color', 'lilo' ),
+			'slug'  => 'primary three',
+			'color' => esc_html( $color_palette['primary_color_three'] ),
 		),
 		array(
-			'name'  => esc_html_x( 'Highlight', 'block color', 'lilo' ),
-			'slug'  => 'highlight',
-			'color' => esc_html( $color_palette['highlight_color'] ),
+			'name'  => esc_html_x( 'Secondary One', 'block color', 'lilo' ),
+			'slug'  => 'secondary one',
+			'color' => esc_html( $color_palette['secondary_color_one'] ),
 		),
 		array(
-			'name'  => esc_html_x( 'White', 'block color', 'lilo' ),
-			'slug'  => 'white',
-			'color' => '#ffffff',
-		),
-		array(
-			'name'  => esc_html_x( 'Light Gray', 'block color', 'lilo' ),
-			'slug'  => 'light-gray',
-			'color' => esc_html( $color_palette['light_gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Gray', 'block color', 'lilo' ),
-			'slug'  => 'gray',
-			'color' => esc_html( $color_palette['gray_color'] ),
-		),
-		array(
-			'name'  => esc_html_x( 'Dark Gray', 'block color', 'lilo' ),
-			'slug'  => 'dark-gray',
-			'color' => esc_html( $color_palette['dark_gray_color'] ),
+			'name'  => esc_html_x( 'Secondary Two', 'block color', 'lilo' ),
+			'slug'  => 'secondary two',
+			'color' => esc_html( $color_palette['secondary_color_two'] ),
 		),
 		array(
 			'name'  => esc_html_x( 'Black', 'block color', 'lilo' ),
@@ -230,3 +213,20 @@ function lilo_block_editor_body_classes( $classes ) {
 	return $classes;
 }
 add_filter( 'admin_body_class', 'lilo_block_editor_body_classes' );
+
+/**
+ * Add Accordion Menu to Gutenberg Editor.
+ */
+function enqueue_accordion_block_assets() {
+
+	$blockPath = '/assets/js/accordion-block.js';
+
+    wp_enqueue_script(
+        'accordion-block',
+        get_template_directory_uri() . $blockPath,
+		// Without 'wp-editor' dependency, the block editor will not load.
+        array( 'wp-blocks', 'wp-element' ), 
+        filemtime(get_template_directory() . $blockPath )
+    );
+}
+add_action('enqueue_block_editor_assets', 'enqueue_accordion_block_assets');

@@ -1,0 +1,160 @@
+=== LiLO Styleguide ===
+Author URI: https://liste-lebenswerte-ortenau.de
+Contributors: LiLO
+
+Der Styleguide legt die gestalterischen und inhaltlichen Grundlagen fest, die bei der Konzeption der Inhalte. beruecksichtigt werden. 
+Er dient als Refereenz, um sicherzustellen, dass das Design und die Inhalte konsistent und benutzerfreundlich sind.
+
+Visuelle Gestaltung
+
+1. Logo:
+
+    LiLO
+    Red         - #CC3333
+    Black       - #000000
+    DarkGray    - #333333
+    Gray        - #808080
+    LightGray   - #cccccc
+
+    LHL
+    Red         - #CC3333
+    Green       - #66cc00
+    DarkGreen   - #336600
+    BrownNut    - #993300
+    Brown       - #cc6600
+
+    Manu
+    Blue        - #3771c8
+    BlueDark    - #060E1A
+    Gray        - #808080
+
+2. Farben
+    Primaerfarben:
+
+    LiLO
+    primary-color-one   Red         - #CC3333
+    primary-color-two   DarkGray    - #333333
+    primary-color-three White       - #ffffff
+
+    LHL
+    primary-color-one   Green       - #66cc00 // dominierend aber zu wenig Kontrast
+    primary-color-one   DarkGreen   - #408000
+    primary-color-two   DarkGray    - #333333 
+    primary-color-three White       - #ffffff
+
+    Manu
+    primary-color-one   Blue        - #3771c8
+    primary-color-two   BlueDark    - #060E1A
+    primary-color-three White       - #ffffff
+
+    Sekundaerfarben:
+
+    LiLO LHL Manu
+    secondary-color-one Gray        - #808080
+    secondary-color-two LightGray   - #cccccc
+
+    Akzentfarbe
+
+    LiLO
+    accent-color        Red         - #CC3333
+
+    LHL
+    accent-color        Green       - #408000
+
+    Manu
+    accent-color        Blue        - #3771c8
+
+3. Typografie
+    Schriftarten:
+        Hauptschriftart
+            Einsatz: Ueberschrift, Navigation
+            Name: Francois sans serif
+            Gewichte: Regular (400), Bold (700)
+
+        Sekundarschriftart
+            Einsatz: Text, Button
+            Name: Ubuntu sans serif
+            Gewichte: Regular (400), Bolt (700)
+
+        Andere:
+            1-  <code>- Wird in der Regel in einer monospaced (nichtproportionalen) Schriftart dargestellt.
+                Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+
+            2- <blockquote> Es ist üblich, für <blockquote> Elemente eine andere Schriftart zu verwenden,
+                um sie vom restlichen Text abzuheben und zu betonen, dass es sich um ein Zitat handelt. 
+                Georgia ist eine Schriftart, die oft für diesen Zweck verwendet wird, da sie gut lesbar ist und einen formalen,
+                seriösen Eindruck vermittelt. Setzt die Schriftart auf Georgia, mit "Times New Roman", Times und serif als 
+                Fallback-Schriftarten, falls Georgia nicht verfügbar ist.
+                Georgia, "Times New Roman", Times, serif; 
+
+        Schriftgroessen
+            H1: 28px
+            H2: 24px
+            H3: 22px
+            H4: 20px
+            H5: 19px
+            H6: 18px
+
+        Body Text: 16px
+            Zeilenhoehe: 1.75 Fliesstext
+
+    Textstile:
+        Ueberschriften: Fliesstext
+        Fliesstext: Normalschrift, keine Kapitelchen
+
+4. Layout und Raster
+    Breite Navigation: 1500px
+    Maximale Breite Content: 1340px
+
+    Grid-System:
+        - Content 
+        - Content + Sidebar
+
+    Abstaende:
+        Aussenabstand (Margin):
+        Innenabstand (Padding):
+
+5. Buttons und Links
+    Primaerbutton:      (Input, Read More..., Pagination, WP-Block-Button, )
+        Hintergrund:    Red         - #CC3333
+        Textfarbe:      White       - #ffffff
+        Hover:          DarkGray    - #333333
+        Hover-scale     10%
+        Border-radius   0px
+        Padding         0.6rem 1rem
+        Form            Ohne Schatten, keine Button erkennung
+        Font-Size:      16px - Standart
+        Font-Size:      15px (Read More...)             Hover-Scale
+        Font-Size:      16px (Pagination)
+        Font-Size:      17px (WP-Block-Button)          non Hover-Scale=
+
+    Sekundaerbutton:    (Navigation, Meta, Categories, Comment )
+        Hintergrund:    DarkGray    - #333333
+        Textfarbe:      White       - #ffffff
+        Hover:          Red         - #CC3333
+        Hover-scale     10%
+        Border-radius   0px
+        Padding         ? ?
+        Form            Ohne Schatten, keine Button erkennung
+        Font-Size:      16px - Standart
+        Font-Size:      15px (Button, Reset, Submit)
+        Font Size:      15px (meta, comment, categories)
+        Font-Size:      15px (Navigation)
+
+    Links:
+        Standart:       Red, unterstrichen
+        Hover:          Red, nicht unterstrichen
+
+6. Bilder und Medien
+    Format:     
+
+        WebP fuer Fotos
+        SVG fuer Icons und Grafiken
+
+        Breite der Fotos: 350px
+
+== Changelog ==
+Semantic Versioning -> https://semver.org/
+
+= 1.0 - 2024-06-16 =
+- Erstellt
