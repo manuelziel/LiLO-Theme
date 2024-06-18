@@ -3,7 +3,7 @@ Author URI: https://liste-lebenswerte-ortenau.de
 Theme URI: https://liste-lebenswerte-ortenau.de
 Contributors: LiLO
 Tags: one-column, blog, news, custom-background, custom-logo, custom-header, custom-menu, grid-layout, entertainment, editor-style, block-styles, block-patterns, rtl-language-support, featured-image-header, featured-images, flexible-header, custom-colors, full-width-template, sticky-post, threaded-comments, translation-ready, theme-options, two-columns, three-columns
-Requires at least: 6.0
+Requires at least: 6.4
 Tested up to: 6.5.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -34,6 +34,11 @@ Roadmap:
 
 == Changelog ==
 Semantic Versioning -> https://semver.org/
+
+= 2.3.0 - 2024-06-18 =
+- Remove footer credit settings from customizer
+- FIX stylesheet .post-navigation 
+- FIX stylesheet .comment-form textarea
 
 = 2.2.0 - 2024-06-16 =
 - Add scroll to top feature

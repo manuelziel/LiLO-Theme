@@ -153,6 +153,8 @@ Visuelle Gestaltung
 
         Breite der Fotos: 350px
 
+TODO
+
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 

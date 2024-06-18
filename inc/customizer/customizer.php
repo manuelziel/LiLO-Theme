@@ -19,7 +19,6 @@ require( get_template_directory() . '/inc/customizer/sections/layout-settings.ph
 require( get_template_directory() . '/inc/customizer/sections/featured-posts-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/blog-settings.php' );
 require( get_template_directory() . '/inc/customizer/sections/post-settings.php' );
-require( get_template_directory() . '/inc/customizer/sections/footer-settings.php' );
 
 /**
  * Registers Theme Options panel and sets up some WordPress core settings

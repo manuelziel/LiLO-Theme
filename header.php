@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @version 1.1
+ * @version 1.2
  * @package LiLO
  */
 
@@ -46,8 +46,6 @@
 		</header><!-- #masthead -->
 
 		<?php lilo_header_image(); ?>
-
-		<?php lilo_breadcrumbs(); ?>
 
 		<?php do_action( 'lilo_after_header' ); ?>
 

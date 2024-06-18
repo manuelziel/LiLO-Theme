@@ -10,7 +10,6 @@
 // Check if there is footer content available.
 if ( is_active_sidebar( 'footer-copyright' )) :
 	?>
-
 	<div id="footer-line" class="site-info">
 		<?php dynamic_sidebar( 'footer-copyright' ); ?>
 		<div class="footer-copyright-flex-container">
