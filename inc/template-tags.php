@@ -412,3 +412,13 @@ if ( ! function_exists( 'lilo_pagination' ) ) :
 
 	}
 endif;
+
+if ( ! function_exists( 'lilo_related_posts' ) ) :
+	/**
+	 * Displays related posts on single post view
+	 */
+	function lilo_related_posts() {
+
+		
+	}
+endif;
