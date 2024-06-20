@@ -35,6 +35,10 @@ Roadmap:
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 2.3.1 - 2024-06-20 =
+- FIX and remove relatet posts
+- FIX scroll to top style
+
 = 2.3.0 - 2024-06-18 =
 - Remove footer credit settings from customizer
 - FIX stylesheet .post-navigation 
@@ -51,7 +55,6 @@ Semantic Versioning -> https://semver.org/
 - FIX Stylesheet
 - Remove shadow function from style
 - Change Responsive style for smartphones and tablets up to 960px and desktop and above from 960px
-
 
 = 2.1.1 - 2024-05-30 =
 - FIX translation in the following files: 
