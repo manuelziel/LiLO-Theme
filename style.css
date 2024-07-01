@@ -6,7 +6,7 @@ Theme URI: https://liste-lebenswerte-ortenau.de/
 Author: Manuel Ziel
 Author URI: https://liste-lebenswerte-ortenau.de/
 Description: LiLO is a custom WordPress theme specifically designed for LiLO. It is perfectly suited for blogs and magazines. LiLO is responsive, multipurpose Blogging and Magazine WordPress theme with bold colors and fonts. It comes with a featured content area, various blog layouts and extensive post settings. LiLO is the successor of the popular Dynamic News theme.
-Version: 2.3.1
+Version: 2.3.2
 Requires at least: 6.4
 Tested up to: 6.5.4
 Requires PHP: 8.0
@@ -3342,19 +3342,21 @@ body.wide-theme-layout .site .site-footer {
 
 @media (max-width: 960px) {
 	body.search .site .site-content .site-main .tribe_events.type-tribe_events.status-publish {
-		padding: 0;
-		border: none;
+		border: var(--lilo--content-border-width);
+		border-color: var(--lilo--light-border-color);
 		background: var(--lilo--page-background-color);
-		margin-bottom: 0;
+		margin-bottom: 2rem;
+		padding: 1.5rem;
 	}
 }
 
 @media (min-width: 960px) {
 	body.search .site .site-content .site-main .tribe_events.type-tribe_events.status-publish {
 		border: var(--lilo--content-border-width);
-		border-color: var(--lilo--content-border-color);
+		border-color: var(--lilo--light-border-color);
 		background: var(--lilo--page-background-color);
-		margin-bottom: 1.5rem;
+		margin-bottom: 2rem;
+		padding: 1.5rem;
 	}
 }
 

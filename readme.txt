@@ -35,6 +35,9 @@ Roadmap:
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 2.3.2 - 2024-07-01 =
+- FIX style border  in Search result 
+
 = 2.3.1 - 2024-06-20 =
 - FIX and remove relatet posts
 - FIX scroll to top style
