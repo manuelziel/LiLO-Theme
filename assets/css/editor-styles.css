@@ -464,18 +464,7 @@ body.lilo-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-pos
 	margin-top: 0;
 }
 
-/* Accordion */
-.accordion-header {
-    margin: 0;
-	padding: 0.6rem 1rem;
-	display: flex;
-	align-items: center;
-	justify-content: space-between; 
-	position: relative;
-	background-color: var(--lilo--navi-background-color);
-	color: var(--lilo--navi-text-color);
-}
-
+/* Block Accordion Menu */
 .accordion-header input[type="text"] {
     border: none;
     outline: none;
@@ -484,6 +473,69 @@ body.lilo-page-title-hidden.block-editor-page .edit-post-visual-editor .edit-pos
 	cursor:text;
 	color: var(--lilo--navi-text-color);
 	background-color: var(--lilo--navi-background-color);
+}
+
+.accordion .accordion-header {
+    margin: 0;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    transition: var(--lilo--transition-fast);
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    border: 1px solid var(--lilo--navi-border-color);
+}
+
+.accordion-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+.accordion .accordion-header:not(.open) .accordion-toggle {
+    transform: rotate(0deg); /* Default state */
+}
+
+.accordion .accordion-header.open .accordion-toggle {
+    transform: rotate(180deg); /* Rotated state */
+}
+
+.accordion .accordion-header:not(.open) {
+    background-color: var(--lilo--navi-background-color);
+    color: var(--lilo--navi-text-color);
+}
+
+.accordion .accordion-header:hover {
+    background-color: var(--lilo--navi-hover-color);
+    transform: scale(1.05);
+    transition: var(--lilo--transition-fast);
+}
+
+.accordion .accordion-header.open {
+    background-color: var(--lilo--navi-hover-color);
+}
+
+.accordion .accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    background-color: var(--lilo--page-background-color);
+    transition: max-height 0.3s ease;
+}
+
+.accordion .accordion-content.open {
+    max-height: fit-content;
+    padding: 10px 15px;
 }
 
 /*--------------------------------------------------------------

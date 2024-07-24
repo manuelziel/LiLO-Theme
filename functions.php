@@ -199,10 +199,10 @@ function lilo_widgets_init() {
 		'after_title'   => '</h4>',
 	) );
 
-	// Register Footer Copyright widget area.
+	// Register Footer widget area.
 	register_sidebar( array(
-		'name'          => esc_html__( 'Footer Copyright', 'lilo' ),
-		'id'            => 'footer-copyright',
+		'name'          => esc_html__( 'Footer', 'lilo' ),
+		'id'            => 'footer',
 		'description'   => esc_html_x( 'Appears in the bottom footer line.', 'widget area description', 'lilo' ),
 		'before_widget' => '<div id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</div>',
@@ -229,14 +229,34 @@ function lilo_add_image_size_names( $sizes ) {
 add_filter( 'image_size_names_choose', 'lilo_add_image_size_names' );
 
 /**
+ * Add sticky header
+ */
+function enqueue_sticky_navigation_script() {
+
+	$scriptPath = '/assets/js/sticky-navigation.js';
+
+    wp_enqueue_script(
+        'sticky-header-lilo',
+        get_template_directory_uri() . $scriptPath,
+        array(),
+        filemtime(get_template_directory() . $scriptPath),
+        false
+    );
+}
+add_action('wp_enqueue_scripts', 'enqueue_sticky_navigation_script');
+
+/**
  * Add accordion to fontent
  */
 function enqueue_accordion_script() {
+
+	$scriptPath = '/assets/js/accordion.js';
+
     wp_enqueue_script(
         'accordion-lilo',
-        get_template_directory_uri() . '/assets/js/accordion.js',
+        get_template_directory_uri() . $scriptPath,
         array(),
-        filemtime(get_template_directory() . '/assets/js/accordion.js'),
+        filemtime(get_template_directory() . $scriptPath),
         false
     );
 }
@@ -246,11 +266,14 @@ add_action('wp_enqueue_scripts', 'enqueue_accordion_script');
  * Add scroll to top button
  */
 function enqueue_scroll_to_top_script() {
+
+	$scriptPath = '/assets/js/scroll-to-top.js';
+
     wp_enqueue_script(
         'scroll-to-top-lilo',
-        get_template_directory_uri() . '/assets/js/scroll-to-top.js',
+        get_template_directory_uri() . $scriptPath,
         array(),
-        filemtime(get_template_directory() . '/assets/js/scroll-to-top.js'),
+        filemtime(get_template_directory() . $scriptPath),
         false
     );
 }

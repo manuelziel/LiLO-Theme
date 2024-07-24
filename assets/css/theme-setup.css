@@ -188,50 +188,69 @@ body.lhl {
 /*--------------------------------------------------------------
 # - Accordion Menue
 --------------------------------------------------------------*/
-/* Accordion Styles */
+/* Block Accordion Menu */
 .accordion .accordion-header {
-	padding: 10px;
-    padding-right: 30px; 
+    margin: 0;
+    padding: 0.6rem 1rem;
     cursor: pointer;
-    transition: transform 0.3s ease-in-out;
+    transition: var(--lilo--transition-fast);
     user-select: none;
     display: flex;
     align-items: center;
-    justify-content: flex-start; 
+    justify-content: space-between;
     position: relative;
+    border: 1px solid var(--lilo--navi-border-color);
 }
 
 .accordion-toggle {
-    position: absolute;
-    right: 1rem;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-toggle svg {
+    width: 24px;
+    height: 24px;
+}
+
+.accordion .accordion-header:not(.open) .accordion-toggle {
+    transform: rotate(0deg); /* Default state */
+	fill: var(--lilo--navi-text-color);
+}
+
+.accordion .accordion-header.open .accordion-toggle {
+    transform: rotate(180deg); /* Rotated state */
+	fill: var(--lilo--navi-background-color);
 }
 
 .accordion .accordion-header:not(.open) {
-	background-color: var(--lilo--navi-background-color);
-	color: var(--lilo--navi-text-color);
+    background-color: var(--lilo--navi-background-color);
+    color: var(--lilo--navi-text-color);
 }
 
 .accordion .accordion-header:hover {
-	background-color: var(--lilo--navi-hover-color);
-	transition: transform 0.3s ease-in-out;
+    background-color: var(--lilo--navi-hover-color);
+    transform: scale(1.05);
+    transition: var(--lilo--transition-fast);
 }
 
 .accordion .accordion-header.open {
-	background-color: var(--lilo--navi-hover-color);
-	color: var(--lilo--navi-text-color);
+    background-color: var(--lilo--navi-hover-color);
 }
 
 .accordion .accordion-content {
-	max-height: 0;
-	overflow: hidden;
-	padding: 0 15px;
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 15px;
+    transition: max-height 0.3s ease;
 }
 
 .accordion .accordion-content.open {
-	max-height: fit-content;
-	padding: 10px 15px;
+    max-height: fit-content;
+    padding: 10px 15px;
 }
 
 /*--------------------------------------------------------------

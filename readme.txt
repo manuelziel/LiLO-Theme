@@ -35,8 +35,16 @@ Roadmap:
 == Changelog ==
 Semantic Versioning -> https://semver.org/
 
+= 2.4.0 - 2024-07-23 =
+- Add Sticky Navigation in css and as JavaScript
+- Change Responsive style for Headerimage
+- Change Styleguide
+- Fix Accordion style
+- Fix language .po remove Footer-Settings
+- Fix Footer-credit to Footer
+
 = 2.3.2 - 2024-07-01 =
-- FIX style border  in Search result 
+- FIX style border in Search result 
 
 = 2.3.1 - 2024-06-20 =
 - FIX and remove relatet posts

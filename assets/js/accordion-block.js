@@ -6,9 +6,12 @@
 
 // accordion-block.js
 (function (blocks, element, editor) {
-    var el = element.createElement;
-    var InnerBlocks = editor.InnerBlocks;
-    var RichText = editor.RichText;
+    const el = element.createElement;
+    const InnerBlocks = editor.InnerBlocks;
+    const RichText = editor.RichText;
+
+    // Parsing the SVG icon once
+    const iconHTML = new DOMParser().parseFromString(liloScreenReaderText.icon, 'text/html').body.firstElementChild;
 
     blocks.registerBlockType('custom/accordion', {
         title: 'Accordion',
@@ -34,7 +37,12 @@
                         },
                         placeholder: 'Accordion Title'
                     }),
-                    el('span', { className: 'accordion-toggle' }, '+')
+                    el('span', { className: 'accordion-toggle', ref: function(span) {
+                        if (span) {
+                            span.innerHTML = ''; // Clear previous content
+                            span.appendChild(iconHTML.cloneNode(true));
+                        }
+                    }})
                 ),
                 el('div', { className: 'accordion-content' },
                     el(InnerBlocks)
@@ -49,11 +57,16 @@
                     el(RichText.Content, {
                         value: props.attributes.title
                     }),
-                    el('span', { className: 'accordion-toggle' }, '+')
+                    el('span', { className: 'accordion-toggle', ref: function(span) {
+                        if (span) {
+                            span.innerHTML = ''; // Clear previous content
+                            span.appendChild(iconHTML.cloneNode(true));
+                        }
+                    }})
                 ),
                 el('div', { className: 'accordion-content' },
                     el(InnerBlocks.Content)
-                ),
+                )
             );
         }
     });

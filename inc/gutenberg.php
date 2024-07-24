@@ -228,5 +228,9 @@ function enqueue_accordion_block_assets() {
         array( 'wp-blocks', 'wp-element' ), 
         filemtime(get_template_directory() . $blockPath )
     );
+
+    wp_localize_script('accordion-block', 'liloScreenReaderText', array(
+        'icon' => '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16"><symbol viewBox="0 0 16 16" id="expand"><title>expand</title><polygon points="8,12.7 1.3,6 2.7,4.6 8,9.9 13.3,4.6 14.7,6 "/></symbol><use href="#expand" /></svg>',
+    ));
 }
 add_action('enqueue_block_editor_assets', 'enqueue_accordion_block_assets');

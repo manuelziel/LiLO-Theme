@@ -68,8 +68,8 @@ msgid "Appears on header area. You can add a search or an ad widget here."
 msgstr "Erscheint im Kopfbereich. Hier können Sie eine Suchfunktion oder ein Anzeigewidget hinzufügen."
 
 #: functions.php:209
-msgid "Footer Copyright"
-msgstr "Fußzeilen-Copyright"
+msgid "Footer"
+msgstr "Fußzeile"
 
 #: functions.php:211
 msgctxt "widget area description"
@@ -240,18 +240,6 @@ msgstr "Ein Beitrag"
 #: inc/customizer/sections/featured-posts-settings.php:85
 msgid "Four Posts"
 msgstr "Vier Beiträge"
-
-#: inc/customizer/sections/footer-settings.php:19
-msgid "Footer Settings"
-msgstr "Fußzeilen-Einstellungen"
-
-#: inc/customizer/sections/footer-settings.php:36
-msgid "Footer Text"
-msgstr "Fußzeilen-Text"
-
-#: inc/customizer/sections/footer-settings.php:59
-msgid "Display credit link on footer line"
-msgstr "Credit-Link in der Fußzeile anzeigen"
 
 #: inc/customizer/sections/layout-settings.php:19
 msgid "Layout Settings"

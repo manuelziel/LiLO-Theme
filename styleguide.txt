@@ -78,7 +78,7 @@ Visuelle Gestaltung
 
         Andere:
             1-  <code>- Wird in der Regel in einer monospaced (nichtproportionalen) Schriftart dargestellt.
-                Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
+                Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; (Websave)
 
             2- <blockquote> Es ist üblich, für <blockquote> Elemente eine andere Schriftart zu verwenden,
                 um sie vom restlichen Text abzuheben und zu betonen, dass es sich um ein Zitat handelt. 
@@ -101,13 +101,14 @@ Visuelle Gestaltung
     Textstile:
         Ueberschriften: Fliesstext
         Fliesstext: Normalschrift, keine Kapitelchen
+        Zitate: In Kursiv 
 
 4. Layout und Raster
     Breite Navigation: 1500px
     Maximale Breite Content: 1340px
 
     Grid-System:
-        - Content 
+        - Content (Two Grid bei Medien und Text, Three Grid nur bei Bildern)
         - Content + Sidebar
 
     Abstaende:
@@ -151,12 +152,16 @@ Visuelle Gestaltung
         WebP fuer Fotos
         SVG fuer Icons und Grafiken
 
-        Breite der Fotos: 350px
-
-TODO
+        Breite der Fotos: 2000px
 
 == Changelog ==
 Semantic Versioning -> https://semver.org/
+
+= 2.0 - 2024-07-07 =
+- Breite der Fotos werden in 2000px anstatt 350px hochgeladen. 
+    350px ist aktuell die Darstellung bei Volle groesse und wenn Links- oder Rechts gesetzt
+- Verfollstaedigung der Grid definierung
+- Definierung von Zitaten
 
 = 1.0 - 2024-06-16 =
 - Erstellt
