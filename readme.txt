@@ -26,7 +26,6 @@ Roadmap:
 - More social media links
 - Implement social media sidebar at page border
 - Include extra styles in an additional stylesheet
-- New, smarter Headerstyle
 
 == Installation ==
 1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
